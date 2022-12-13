@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<!-- saved from url=(0082)https://www.jinhong.org/moodle/mod/quiz/attempt.php?attempt=65402&cmid=1142&page=1 -->
+<html dir="ltr" lang="en" xml:lang="en" class="yui3-js-enabled"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style id="autocompletion.css">.ace_editor.ace_autocomplete .ace_marker-layer .ace_active-line {    background-color: #CAD6FA;    z-index: 1;}.ace_dark.ace_editor.ace_autocomplete .ace_marker-layer .ace_active-line {    background-color: #3a674e;}.ace_editor.ace_autocomplete .ace_line-hover {    border: 1px solid #abbffe;    margin-top: -1px;    background: rgba(233,233,253,0.4);    position: absolute;    z-index: 2;}.ace_dark.ace_editor.ace_autocomplete .ace_line-hover {    border: 1px solid rgba(109, 150, 13, 0.8);    background: rgba(58, 103, 78, 0.62);}.ace_completion-meta {    opacity: 0.5;    margin: 0.9em;}.ace_completion-message {    color: blue;}.ace_editor.ace_autocomplete .ace_completion-highlight{    color: #2d69c7;}.ace_dark.ace_editor.ace_autocomplete .ace_completion-highlight{    color: #93ca12;}.ace_editor.ace_autocomplete {    width: 300px;    z-index: 200000;    border: 1px lightgray solid;    position: fixed;    box-shadow: 2px 3px 5px rgba(0,0,0,.2);    line-height: 1.4;    background: #fefefe;    color: #111;}.ace_dark.ace_editor.ace_autocomplete {    border: 1px #484747 solid;    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.51);    line-height: 1.4;    background: #25282c;    color: #c1c1c1;}
+/*# sourceURL=ace/css/autocompletion.css */</style><style>.ace_snippet-marker {    -moz-box-sizing: border-box;    box-sizing: border-box;    background: rgba(194, 193, 208, 0.09);    border: 1px dotted rgba(211, 208, 235, 0.62);    position: absolute;}</style><style>    .error_widget_wrapper {        background: inherit;        color: inherit;        border:none    }    .error_widget {        border-top: solid 2px;        border-bottom: solid 2px;        margin: 5px 0;        padding: 10px 40px;        white-space: pre-wrap;    }    .error_widget.ace_error, .error_widget_arrow.ace_error{        border-color: #ff5a5a    }    .error_widget.ace_warning, .error_widget_arrow.ace_warning{        border-color: #F1D817    }    .error_widget.ace_info, .error_widget_arrow.ace_info{        border-color: #5a5a5a    }    .error_widget.ace_ok, .error_widget_arrow.ace_ok{        border-color: #5aaa5a    }    .error_widget_arrow {        position: absolute;        border: solid 5px;        border-top-color: transparent!important;        border-right-color: transparent!important;        border-left-color: transparent!important;        top: -5px;    }</style><style id="ace-tm">.ace-tm .ace_gutter {background: #f0f0f0;color: #333;}.ace-tm .ace_print-margin {width: 1px;background: #e8e8e8;}.ace-tm .ace_fold {background-color: #6B72E6;}.ace-tm {background-color: #FFFFFF;color: black;}.ace-tm .ace_cursor {color: black;}.ace-tm .ace_invisible {color: rgb(191, 191, 191);}.ace-tm .ace_storage,.ace-tm .ace_keyword {color: blue;}.ace-tm .ace_constant {color: rgb(197, 6, 11);}.ace-tm .ace_constant.ace_buildin {color: rgb(88, 72, 246);}.ace-tm .ace_constant.ace_language {color: rgb(88, 92, 246);}.ace-tm .ace_constant.ace_library {color: rgb(6, 150, 14);}.ace-tm .ace_invalid {background-color: rgba(255, 0, 0, 0.1);color: red;}.ace-tm .ace_support.ace_function {color: rgb(60, 76, 114);}.ace-tm .ace_support.ace_constant {color: rgb(6, 150, 14);}.ace-tm .ace_support.ace_type,.ace-tm .ace_support.ace_class {color: rgb(109, 121, 222);}.ace-tm .ace_keyword.ace_operator {color: rgb(104, 118, 135);}.ace-tm .ace_string {color: rgb(3, 106, 7);}.ace-tm .ace_comment {color: rgb(76, 136, 107);}.ace-tm .ace_comment.ace_doc {color: rgb(0, 102, 255);}.ace-tm .ace_comment.ace_doc.ace_tag {color: rgb(128, 159, 191);}.ace-tm .ace_constant.ace_numeric {color: rgb(0, 0, 205);}.ace-tm .ace_variable {color: rgb(49, 132, 149);}.ace-tm .ace_xml-pe {color: rgb(104, 104, 91);}.ace-tm .ace_entity.ace_name.ace_function {color: #0000A2;}.ace-tm .ace_heading {color: rgb(12, 7, 255);}.ace-tm .ace_list {color:rgb(185, 6, 144);}.ace-tm .ace_meta.ace_tag {color:rgb(0, 22, 142);}.ace-tm .ace_string.ace_regex {color: rgb(255, 0, 0)}.ace-tm .ace_marker-layer .ace_selection {background: rgb(181, 213, 255);}.ace-tm.ace_multiselect .ace_selection.ace_start {box-shadow: 0 0 3px 0px white;}.ace-tm .ace_marker-layer .ace_step {background: rgb(252, 255, 0);}.ace-tm .ace_marker-layer .ace_stack {background: rgb(164, 229, 101);}.ace-tm .ace_marker-layer .ace_bracket {margin: -1px 0 0 -1px;border: 1px solid rgb(192, 192, 192);}.ace-tm .ace_marker-layer .ace_active-line {background: rgba(0, 0, 0, 0.07);}.ace-tm .ace_gutter-active-line {background-color : #dcdcdc;}.ace-tm .ace_marker-layer .ace_selected-word {background: rgb(250, 250, 255);border: 1px solid rgb(200, 200, 250);}.ace-tm .ace_indent-guide {background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAE0lEQVQImWP4////f4bLly//BwAmVgd1/w11/gAAAABJRU5ErkJggg==") right repeat-y;}
+/*# sourceURL=ace/css/ace-tm */</style><style id="ace_editor.css">.ace_br1 {border-top-left-radius    : 3px;}.ace_br2 {border-top-right-radius   : 3px;}.ace_br3 {border-top-left-radius    : 3px; border-top-right-radius:    3px;}.ace_br4 {border-bottom-right-radius: 3px;}.ace_br5 {border-top-left-radius    : 3px; border-bottom-right-radius: 3px;}.ace_br6 {border-top-right-radius   : 3px; border-bottom-right-radius: 3px;}.ace_br7 {border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-right-radius: 3px;}.ace_br8 {border-bottom-left-radius : 3px;}.ace_br9 {border-top-left-radius    : 3px; border-bottom-left-radius:  3px;}.ace_br10{border-top-right-radius   : 3px; border-bottom-left-radius:  3px;}.ace_br11{border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-left-radius:  3px;}.ace_br12{border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br13{border-top-left-radius    : 3px; border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br14{border-top-right-radius   : 3px; border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br15{border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;}.ace_editor {position: relative;overflow: hidden;font: 12px/normal 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;direction: ltr;text-align: left;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}.ace_scroller {position: absolute;overflow: hidden;top: 0;bottom: 0;background-color: inherit;-ms-user-select: none;-moz-user-select: none;-webkit-user-select: none;user-select: none;cursor: text;}.ace_content {position: absolute;box-sizing: border-box;min-width: 100%;contain: style size layout;}.ace_dragging .ace_scroller:before{position: absolute;top: 0;left: 0;right: 0;bottom: 0;content: '';background: rgba(250, 250, 250, 0.01);z-index: 1000;}.ace_dragging.ace_dark .ace_scroller:before{background: rgba(0, 0, 0, 0.01);}.ace_selecting, .ace_selecting * {cursor: text !important;}.ace_gutter {position: absolute;overflow : hidden;width: auto;top: 0;bottom: 0;left: 0;cursor: default;z-index: 4;-ms-user-select: none;-moz-user-select: none;-webkit-user-select: none;user-select: none;contain: style size layout;}.ace_gutter-active-line {position: absolute;left: 0;right: 0;}.ace_scroller.ace_scroll-left {box-shadow: 17px 0 16px -16px rgba(0, 0, 0, 0.4) inset;}.ace_gutter-cell {position: absolute;top: 0;left: 0;right: 0;padding-left: 19px;padding-right: 6px;background-repeat: no-repeat;}.ace_gutter-cell.ace_error {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAABOFBMVEX/////////QRswFAb/Ui4wFAYwFAYwFAaWGAfDRymzOSH/PxswFAb/SiUwFAYwFAbUPRvjQiDllog5HhHdRybsTi3/Tyv9Tir+Syj/UC3////XurebMBIwFAb/RSHbPx/gUzfdwL3kzMivKBAwFAbbvbnhPx66NhowFAYwFAaZJg8wFAaxKBDZurf/RB6mMxb/SCMwFAYwFAbxQB3+RB4wFAb/Qhy4Oh+4QifbNRcwFAYwFAYwFAb/QRzdNhgwFAYwFAbav7v/Uy7oaE68MBK5LxLewr/r2NXewLswFAaxJw4wFAbkPRy2PyYwFAaxKhLm1tMwFAazPiQwFAaUGAb/QBrfOx3bvrv/VC/maE4wFAbRPBq6MRO8Qynew8Dp2tjfwb0wFAbx6eju5+by6uns4uH9/f36+vr/GkHjAAAAYnRSTlMAGt+64rnWu/bo8eAA4InH3+DwoN7j4eLi4xP99Nfg4+b+/u9B/eDs1MD1mO7+4PHg2MXa347g7vDizMLN4eG+Pv7i5evs/v79yu7S3/DV7/498Yv24eH+4ufQ3Ozu/v7+y13sRqwAAADLSURBVHjaZc/XDsFgGIBhtDrshlitmk2IrbHFqL2pvXf/+78DPokj7+Fz9qpU/9UXJIlhmPaTaQ6QPaz0mm+5gwkgovcV6GZzd5JtCQwgsxoHOvJO15kleRLAnMgHFIESUEPmawB9ngmelTtipwwfASilxOLyiV5UVUyVAfbG0cCPHig+GBkzAENHS0AstVF6bacZIOzgLmxsHbt2OecNgJC83JERmePUYq8ARGkJx6XtFsdddBQgZE2nPR6CICZhawjA4Fb/chv+399kfR+MMMDGOQAAAABJRU5ErkJggg==");background-repeat: no-repeat;background-position: 2px center;}.ace_gutter-cell.ace_warning {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAmVBMVEX///8AAAD///8AAAAAAABPSzb/5sAAAAB/blH/73z/ulkAAAAAAAD85pkAAAAAAAACAgP/vGz/rkDerGbGrV7/pkQICAf////e0IsAAAD/oED/qTvhrnUAAAD/yHD/njcAAADuv2r/nz//oTj/p064oGf/zHAAAAA9Nir/tFIAAAD/tlTiuWf/tkIAAACynXEAAAAAAAAtIRW7zBpBAAAAM3RSTlMAABR1m7RXO8Ln31Z36zT+neXe5OzooRDfn+TZ4p3h2hTf4t3k3ucyrN1K5+Xaks52Sfs9CXgrAAAAjklEQVR42o3PbQ+CIBQFYEwboPhSYgoYunIqqLn6/z8uYdH8Vmdnu9vz4WwXgN/xTPRD2+sgOcZjsge/whXZgUaYYvT8QnuJaUrjrHUQreGczuEafQCO/SJTufTbroWsPgsllVhq3wJEk2jUSzX3CUEDJC84707djRc5MTAQxoLgupWRwW6UB5fS++NV8AbOZgnsC7BpEAAAAABJRU5ErkJggg==");background-position: 2px center;}.ace_gutter-cell.ace_info {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAJ0Uk5TAAB2k804AAAAPklEQVQY02NgIB68QuO3tiLznjAwpKTgNyDbMegwisCHZUETUZV0ZqOquBpXj2rtnpSJT1AEnnRmL2OgGgAAIKkRQap2htgAAAAASUVORK5CYII=");background-position: 2px center;}.ace_dark .ace_gutter-cell.ace_info {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAJFBMVEUAAAChoaGAgIAqKiq+vr6tra1ZWVmUlJSbm5s8PDxubm56enrdgzg3AAAAAXRSTlMAQObYZgAAAClJREFUeNpjYMAPdsMYHegyJZFQBlsUlMFVCWUYKkAZMxZAGdxlDMQBAG+TBP4B6RyJAAAAAElFTkSuQmCC");}.ace_scrollbar {contain: strict;position: absolute;right: 0;bottom: 0;z-index: 6;}.ace_scrollbar-inner {position: absolute;cursor: text;left: 0;top: 0;}.ace_scrollbar-v{overflow-x: hidden;overflow-y: scroll;top: 0;}.ace_scrollbar-h {overflow-x: scroll;overflow-y: hidden;left: 0;}.ace_print-margin {position: absolute;height: 100%;}.ace_text-input {position: absolute;z-index: 0;width: 0.5em;height: 1em;opacity: 0;background: transparent;-moz-appearance: none;appearance: none;border: none;resize: none;outline: none;overflow: hidden;font: inherit;padding: 0 1px;margin: 0 -1px;contain: strict;-ms-user-select: text;-moz-user-select: text;-webkit-user-select: text;user-select: text;white-space: pre!important;}.ace_text-input.ace_composition {background: transparent;color: inherit;z-index: 1000;opacity: 1;}.ace_composition_placeholder { color: transparent }.ace_composition_marker { border-bottom: 1px solid;position: absolute;border-radius: 0;margin-top: 1px;}[ace_nocontext=true] {transform: none!important;filter: none!important;perspective: none!important;clip-path: none!important;mask : none!important;contain: none!important;perspective: none!important;mix-blend-mode: initial!important;z-index: auto;}.ace_layer {z-index: 1;position: absolute;overflow: hidden;word-wrap: normal;white-space: pre;height: 100%;width: 100%;box-sizing: border-box;pointer-events: none;}.ace_gutter-layer {position: relative;width: auto;text-align: right;pointer-events: auto;height: 1000000px;contain: style size layout;}.ace_text-layer {font: inherit !important;position: absolute;height: 1000000px;width: 1000000px;contain: style size layout;}.ace_text-layer > .ace_line, .ace_text-layer > .ace_line_group {contain: style size layout;position: absolute;top: 0;left: 0;right: 0;}.ace_hidpi .ace_text-layer,.ace_hidpi .ace_gutter-layer,.ace_hidpi .ace_content,.ace_hidpi .ace_gutter {contain: strict;will-change: transform;}.ace_hidpi .ace_text-layer > .ace_line, .ace_hidpi .ace_text-layer > .ace_line_group {contain: strict;}.ace_cjk {display: inline-block;text-align: center;}.ace_cursor-layer {z-index: 4;}.ace_cursor {z-index: 4;position: absolute;box-sizing: border-box;border-left: 2px solid;transform: translatez(0);}.ace_multiselect .ace_cursor {border-left-width: 1px;}.ace_slim-cursors .ace_cursor {border-left-width: 1px;}.ace_overwrite-cursors .ace_cursor {border-left-width: 0;border-bottom: 1px solid;}.ace_hidden-cursors .ace_cursor {opacity: 0.2;}.ace_hasPlaceholder .ace_hidden-cursors .ace_cursor {opacity: 0;}.ace_smooth-blinking .ace_cursor {transition: opacity 0.18s;}.ace_animate-blinking .ace_cursor {animation-duration: 1000ms;animation-timing-function: step-end;animation-name: blink-ace-animate;animation-iteration-count: infinite;}.ace_animate-blinking.ace_smooth-blinking .ace_cursor {animation-duration: 1000ms;animation-timing-function: ease-in-out;animation-name: blink-ace-animate-smooth;}@keyframes blink-ace-animate {from, to { opacity: 1; }60% { opacity: 0; }}@keyframes blink-ace-animate-smooth {from, to { opacity: 1; }45% { opacity: 1; }60% { opacity: 0; }85% { opacity: 0; }}.ace_marker-layer .ace_step, .ace_marker-layer .ace_stack {position: absolute;z-index: 3;}.ace_marker-layer .ace_selection {position: absolute;z-index: 5;}.ace_marker-layer .ace_bracket {position: absolute;z-index: 6;}.ace_marker-layer .ace_active-line {position: absolute;z-index: 2;}.ace_marker-layer .ace_selected-word {position: absolute;z-index: 4;box-sizing: border-box;}.ace_line .ace_fold {box-sizing: border-box;display: inline-block;height: 11px;margin-top: -2px;vertical-align: middle;background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJpJREFUeNpi/P//PwOlgAXGYGRklAVSokD8GmjwY1wasKljQpYACtpCFeADcHVQfQyMQAwzwAZI3wJKvCLkfKBaMSClBlR7BOQikCFGQEErIH0VqkabiGCAqwUadAzZJRxQr/0gwiXIal8zQQPnNVTgJ1TdawL0T5gBIP1MUJNhBv2HKoQHHjqNrA4WO4zY0glyNKLT2KIfIMAAQsdgGiXvgnYAAAAASUVORK5CYII="),url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA3CAYAAADNNiA5AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACJJREFUeNpi+P//fxgTAwPDBxDxD078RSX+YeEyDFMCIMAAI3INmXiwf2YAAAAASUVORK5CYII=");background-repeat: no-repeat, repeat-x;background-position: center center, top left;color: transparent;border: 1px solid black;border-radius: 2px;cursor: pointer;pointer-events: auto;}.ace_dark .ace_fold {}.ace_fold:hover{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJpJREFUeNpi/P//PwOlgAXGYGRklAVSokD8GmjwY1wasKljQpYACtpCFeADcHVQfQyMQAwzwAZI3wJKvCLkfKBaMSClBlR7BOQikCFGQEErIH0VqkabiGCAqwUadAzZJRxQr/0gwiXIal8zQQPnNVTgJ1TdawL0T5gBIP1MUJNhBv2HKoQHHjqNrA4WO4zY0glyNKLT2KIfIMAAQsdgGiXvgnYAAAAASUVORK5CYII="),url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA3CAYAAADNNiA5AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACBJREFUeNpi+P//fz4TAwPDZxDxD5X4i5fLMEwJgAADAEPVDbjNw87ZAAAAAElFTkSuQmCC");}.ace_tooltip {background-color: #FFF;background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.1));border: 1px solid gray;border-radius: 1px;box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);color: black;max-width: 100%;padding: 3px 4px;position: fixed;z-index: 999999;box-sizing: border-box;cursor: default;white-space: pre;word-wrap: break-word;line-height: normal;font-style: normal;font-weight: normal;letter-spacing: normal;pointer-events: none;}.ace_folding-enabled > .ace_gutter-cell {padding-right: 13px;}.ace_fold-widget {box-sizing: border-box;margin: 0 -12px 0 1px;display: none;width: 11px;vertical-align: top;background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAANElEQVR42mWKsQ0AMAzC8ixLlrzQjzmBiEjp0A6WwBCSPgKAXoLkqSot7nN3yMwR7pZ32NzpKkVoDBUxKAAAAABJRU5ErkJggg==");background-repeat: no-repeat;background-position: center;border-radius: 3px;border: 1px solid transparent;cursor: pointer;}.ace_folding-enabled .ace_fold-widget {display: inline-block;   }.ace_fold-widget.ace_end {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAANElEQVR42m3HwQkAMAhD0YzsRchFKI7sAikeWkrxwScEB0nh5e7KTPWimZki4tYfVbX+MNl4pyZXejUO1QAAAABJRU5ErkJggg==");}.ace_fold-widget.ace_closed {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAGCAYAAAAG5SQMAAAAOUlEQVR42jXKwQkAMAgDwKwqKD4EwQ26sSOkVWjgIIHAzPiCgaqiqnJHZnKICBERHN194O5b9vbLuAVRL+l0YWnZAAAAAElFTkSuQmCCXA==");}.ace_fold-widget:hover {border: 1px solid rgba(0, 0, 0, 0.3);background-color: rgba(255, 255, 255, 0.2);box-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);}.ace_fold-widget:active {border: 1px solid rgba(0, 0, 0, 0.4);background-color: rgba(0, 0, 0, 0.05);box-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);}.ace_dark .ace_fold-widget {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHklEQVQIW2P4//8/AzoGEQ7oGCaLLAhWiSwB146BAQCSTPYocqT0AAAAAElFTkSuQmCC");}.ace_dark .ace_fold-widget.ace_end {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAH0lEQVQIW2P4//8/AxQ7wNjIAjDMgC4AxjCVKBirIAAF0kz2rlhxpAAAAABJRU5ErkJggg==");}.ace_dark .ace_fold-widget.ace_closed {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAFCAYAAACAcVaiAAAAHElEQVQIW2P4//+/AxAzgDADlOOAznHAKgPWAwARji8UIDTfQQAAAABJRU5ErkJggg==");}.ace_dark .ace_fold-widget:hover {box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);background-color: rgba(255, 255, 255, 0.1);}.ace_dark .ace_fold-widget:active {box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);}.ace_inline_button {border: 1px solid lightgray;display: inline-block;margin: -1px 8px;padding: 0 5px;pointer-events: auto;cursor: pointer;}.ace_inline_button:hover {border-color: gray;background: rgba(200,200,200,0.2);display: inline-block;pointer-events: auto;}.ace_fold-widget.ace_invalid {background-color: #FFB4B4;border-color: #DE5555;}.ace_fade-fold-widgets .ace_fold-widget {transition: opacity 0.4s ease 0.05s;opacity: 0;}.ace_fade-fold-widgets:hover .ace_fold-widget {transition: opacity 0.05s ease 0.05s;opacity:1;}.ace_underline {text-decoration: underline;}.ace_bold {font-weight: bold;}.ace_nobold .ace_bold {font-weight: normal;}.ace_italic {font-style: italic;}.ace_error-marker {background-color: rgba(255, 0, 0,0.2);position: absolute;z-index: 9;}.ace_highlight-marker {background-color: rgba(255, 255, 0,0.2);position: absolute;z-index: 8;}.ace_mobile-menu {position: absolute;line-height: 1.5;border-radius: 4px;-ms-user-select: none;-moz-user-select: none;-webkit-user-select: none;user-select: none;background: white;box-shadow: 1px 3px 2px grey;border: 1px solid #dcdcdc;color: black;}.ace_dark > .ace_mobile-menu {background: #333;color: #ccc;box-shadow: 1px 3px 2px grey;border: 1px solid #444;}.ace_mobile-button {padding: 2px;cursor: pointer;overflow: hidden;}.ace_mobile-button:hover {background-color: #eee;opacity:1;}.ace_mobile-button:active {background-color: #ddd;}.ace_placeholder {font-family: arial;transform: scale(0.9);opacity: 0.7;transform-origin: left;text-indent: 10px;}
+/*# sourceURL=ace/css/ace_editor.css */</style>
+    <title>Lab 02. Functions in Python (page 2 of 3)</title>
+    <link rel="shortcut icon" href="https://www.jinhong.org/moodle/theme/image.php/boost/theme/1623086421/favicon">
+    
+<meta name="keywords" content="moodle, Lab 02. Functions in Python (page 2 of 3)">
+<link rel="stylesheet" type="text/css" href="./Lab 02. Functions in Python (page 2 of 3)_files/combo"><script charset="utf-8" id="yui_3_17_2_1_1660491646885_8" src="./Lab 02. Functions in Python (page 2 of 3)_files/combo(1)" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1660491646885_19" src="./Lab 02. Functions in Python (page 2 of 3)_files/combo(2)" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1660491646885_100" src="./Lab 02. Functions in Python (page 2 of 3)_files/javascript.php" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1660491646885_134" src="./Lab 02. Functions in Python (page 2 of 3)_files/javascript(1).php" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1660491646885_135" src="./Lab 02. Functions in Python (page 2 of 3)_files/javascript(2).php" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1660491646885_136" src="./Lab 02. Functions in Python (page 2 of 3)_files/combo(3)" async=""></script><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="./Lab 02. Functions in Python (page 2 of 3)_files/styles.php">
+<script>
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/www.jinhong.org\/moodle","sesskey":"LZxOoGa69P","sessiontimeout":"7200","themerev":"1623086421","slasharguments":1,"theme":"boost","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1623086421","admin":"admin","svgicons":true,"usertimezone":"Australia\/Perth","contextid":24292,"langrev":1651220976,"templaterev":"1623086421"};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"https:\/\/www.jinhong.org\/moodle\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/www.jinhong.org\/moodle\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/www.jinhong.org\/moodle\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/www.jinhong.org\/moodle\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/www.jinhong.org\/moodle\/theme\/yui_combo.php?m\/1623086421\/","combine":true,"comboBase":"https:\/\/www.jinhong.org\/moodle\/theme\/yui_combo.php?","ext":false,"root":"m\/1623086421\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emojipicker-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_h5p-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_html-codemirror":{"requires":["moodle-atto_html-codemirror-skin"]},"moodle-atto_html-beautify":{},"moodle-atto_html-button":{"requires":["promise","moodle-editor_atto-plugin","moodle-atto_html-beautify","moodle-atto_html-codemirror","event-valuechange"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/www.jinhong.org\/moodle\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/www.jinhong.org\/moodle\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1623086421\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/www.jinhong.org\/moodle\/lib\/javascript.php\/1623086421\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/www.jinhong.org\/moodle\/lib\/javascript.php\/1623086421\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdn.jsdelivr.net\/npm\/mathjax@2.7.8\/MathJax.js?delayStartupUntil=configured"},"core_question_flags":{"name":"core_question_flags","fullpath":"https:\/\/www.jinhong.org\/moodle\/lib\/javascript.php\/1623086421\/question\/flags.js","requires":["base","dom","event-delegate","io-base"]},"core_question_engine":{"name":"core_question_engine","fullpath":"https:\/\/www.jinhong.org\/moodle\/lib\/javascript.php\/1623086421\/question\/qengine.js","requires":["node","event"]},"mod_quiz":{"name":"mod_quiz","fullpath":"https:\/\/www.jinhong.org\/moodle\/lib\/javascript.php\/1623086421\/mod\/quiz\/module.js","requires":["base","dom","event-delegate","event-key","core_question_engine","moodle-core-formchangechecker"]}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+
+<style>
+
+.dashboard-card-deck .dashboard-card .dashboard-card-img 
+
+{
+
+-webkit-background-size: contain;
+
+background-size: contain;
+
+background-repeat: no-repeat;
+
+}
+
+</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="core/first" src="./Lab 02. Functions in Python (page 2 of 3)_files/requirejs.php"></script><style type="text/css" data-styled-components="" data-styled-components-is-local="true"></style><script type="text/x-mathjax-config">MathJax.Hub.Config({
+    config: ["Accessible.js", "Safe.js"],
+    errorSettings: { message: ["!"] },
+    skipStartupTypeset: true,
+    messageStyle: "none"
+});
+</script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery" src="./Lab 02. Functions in Python (page 2 of 3)_files/javascript(3).php"></script><script src="./Lab 02. Functions in Python (page 2 of 3)_files/javascript(4).php"></script></head>
+<body id="page-mod-quiz-attempt" class="format-topics path-mod path-mod-quiz chrome dir-ltr lang-en yui-skin-sam yui3-skin-sam www-jinhong-org--moodle pagelayout-incourse course-18 context-24292 cmid-1142 category-2 drawer-open-left jsenabled" data-new-gr-c-s-check-loaded="14.1073.0" data-gr-ext-installed="">
+<div class="toast-wrapper mx-auto py-0 fixed-top" role="status" aria-live="polite"></div>
+
+<div id="page-wrapper" class="d-print-block">
+
+    <div>
+    <a class="sr-only sr-only-focusable" href="https://www.jinhong.org/moodle/mod/quiz/attempt.php?attempt=65402&amp;cmid=1142&amp;page=1#maincontent">Skip to main content</a>
+</div><script src="./Lab 02. Functions in Python (page 2 of 3)_files/javascript(5).php"></script>
+<script src="./Lab 02. Functions in Python (page 2 of 3)_files/javascript(6).php"></script>
+<script src="./Lab 02. Functions in Python (page 2 of 3)_files/combo(4)"></script><script src="./Lab 02. Functions in Python (page 2 of 3)_files/javascript(7).php"></script>
+<script>
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+
+    <nav class="fixed-top navbar navbar-light bg-white navbar-expand moodle-has-zindex" aria-label="Site navigation">
+    
+            <div data-region="drawer-toggle" class="d-inline-block mr-3">
+                <button aria-expanded="true" aria-controls="nav-drawer" type="button" class="btn nav-link float-sm-left mr-1 btn-light bg-gray" data-action="toggle-drawer" data-side="left" data-preference="drawer-open-nav"><i class="icon fa fa-bars fa-fw " aria-hidden="true"></i><span class="sr-only">Side panel</span></button>
+            </div>
+    
+            <a href="https://www.jinhong.org/moodle" class="navbar-brand aabtn 
+                    d-none d-sm-inline
+                    ">
+                <span class="site-name d-none d-md-inline">UWA-CSSE</span>
+            </a>
+    
+            <ul class="navbar-nav d-none d-md-flex">
+                <!-- custom_menu -->
+                
+                <!-- page_heading_menu -->
+                
+            </ul>
+            <ul class="nav navbar-nav ml-auto">
+                <li class="d-none d-lg-block">
+                    
+                </li>
+                <!-- navbar_plugin_output -->
+                <li class="nav-item">
+                    <div class="popover-region collapsed popover-region-notifications" id="nav-notification-popover-container" data-userid="4059" data-region="popover-region">
+    <div class="popover-region-toggle nav-link" data-region="popover-region-toggle" role="button" aria-controls="popover-region-container-62f9177bb3b2762f9177baea545" aria-haspopup="true" aria-label="Show notification window with no new notifications" tabindex="0">
+                <i class="icon fa fa-bell fa-fw " title="Toggle notifications menu" aria-label="Toggle notifications menu"></i>
+        <div class="count-container hidden" data-region="count-container" aria-label="There are 0 unread notifications">0</div>
+
+    </div>
+    <div id="popover-region-container-62f9177bb3b2762f9177baea545" class="popover-region-container" data-region="popover-region-container" aria-expanded="false" aria-hidden="true" aria-label="Notification window" role="region">
+        <div class="popover-region-header-container">
+            <h3 class="popover-region-header-text" data-region="popover-region-header-text">Notifications</h3>
+            <div class="popover-region-header-actions" data-region="popover-region-header-actions">        <a class="mark-all-read-button" href="https://www.jinhong.org/moodle/mod/quiz/attempt.php?attempt=65402&amp;cmid=1142&amp;page=1#" title="Mark all as read" data-action="mark-all-read" role="button" aria-label="Mark all as read">
+            <span class="normal-icon"><i class="icon fa fa-check fa-fw " aria-hidden="true"></i></span>
+            <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw " title="Loading" aria-label="Loading"></i></span>
+        </a>
+        <a href="https://www.jinhong.org/moodle/message/notificationpreferences.php?userid=4059" title="Notification preferences" aria-label="Notification preferences">
+            <i class="icon fa fa-cog fa-fw " aria-hidden="true"></i>
+        </a>
+</div>
+        </div>
+        <div class="popover-region-content-container" data-region="popover-region-content-container">
+            <div class="popover-region-content" data-region="popover-region-content">
+                        <div class="all-notifications" data-region="all-notifications" role="log" aria-busy="false" aria-atomic="false" aria-relevant="additions"></div>
+        <div class="empty-message" tabindex="0" data-region="empty-message">You have no notifications</div>
+
+            </div>
+            <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw " title="Loading" aria-label="Loading"></i></span>
+        </div>
+                <a class="see-all-link" href="https://www.jinhong.org/moodle/message/output/popup/notifications.php">
+                    <div class="popover-region-footer-container">
+                        <div class="popover-region-seeall-text">See all</div>
+                    </div>
+                </a>
+    </div>
+</div>
+                </li>
+                <!-- user_menu -->
+                <li class="nav-item d-flex align-items-center">
+                    <div class="usermenu"><div class="action-menu moodle-actionmenu nowrap-items d-inline" id="action-menu-1" data-enhance="moodle-core-actionmenu">
+
+        <div class="menubar d-flex " id="action-menu-1-menubar" role="menubar">
+
+            
+
+
+                <div class="action-menu-trigger">
+                    <div class="dropdown">
+                        <a href="https://www.jinhong.org/moodle/mod/quiz/attempt.php?attempt=65402&amp;cmid=1142&amp;page=1#" tabindex="0" class="d-inline-block  dropdown-toggle icon-no-margin" id="action-menu-toggle-1" aria-label="User menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="action-menu-1-menu">
+                            
+                            <span class="userbutton"><span class="usertext mr-1">Zehua Zhu</span><span class="avatars"><span class="avatar current"><img src="./Lab 02. Functions in Python (page 2 of 3)_files/f2.png" class="userpicture defaultuserpic" width="35" height="35" aria-hidden="true"></span></span></span>
+                                
+                            <b class="caret"></b>
+                        </a>
+                            <div class="dropdown-menu dropdown-menu-right menu  align-tr-br" id="action-menu-1-menu" data-rel="menu-content" aria-labelledby="action-menu-toggle-1" role="menu" data-align="tr-br">
+                                        <a href="https://www.jinhong.org/moodle/my/" class="dropdown-item menu-action" role="menuitem" data-title="mymoodle,admin" aria-labelledby="actionmenuaction-1">
+                                                <i class="icon fa fa-tachometer fa-fw " aria-hidden="true"></i>
+                                            <span class="menu-action-text" id="actionmenuaction-1">
+                                                Dashboard
+                                            </span>
+                                        </a>
+                                        <div class="dropdown-divider" role="presentation"><span class="filler">&nbsp;</span></div>
+                                        <a href="https://www.jinhong.org/moodle/user/profile.php?id=4059" class="dropdown-item menu-action" role="menuitem" data-title="profile,moodle" aria-labelledby="actionmenuaction-2">
+                                                <i class="icon fa fa-user fa-fw " aria-hidden="true"></i>
+                                            <span class="menu-action-text" id="actionmenuaction-2">
+                                                Profile
+                                            </span>
+                                        </a>
+                                        <a href="https://www.jinhong.org/moodle/grade/report/overview/index.php" class="dropdown-item menu-action" role="menuitem" data-title="grades,grades" aria-labelledby="actionmenuaction-3">
+                                                <i class="icon fa fa-table fa-fw " aria-hidden="true"></i>
+                                            <span class="menu-action-text" id="actionmenuaction-3">
+                                                Grades
+                                            </span>
+                                        </a>
+                                        <a href="https://www.jinhong.org/moodle/message/index.php" class="dropdown-item menu-action" role="menuitem" data-title="messages,message" aria-labelledby="actionmenuaction-4">
+                                                <i class="icon fa fa-comment fa-fw " aria-hidden="true"></i>
+                                            <span class="menu-action-text" id="actionmenuaction-4">
+                                                Messages
+                                            </span>
+                                        </a>
+                                        <a href="https://www.jinhong.org/moodle/user/preferences.php" class="dropdown-item menu-action" role="menuitem" data-title="preferences,moodle" aria-labelledby="actionmenuaction-5">
+                                                <i class="icon fa fa-wrench fa-fw " aria-hidden="true"></i>
+                                            <span class="menu-action-text" id="actionmenuaction-5">
+                                                Preferences
+                                            </span>
+                                        </a>
+                                        <div class="dropdown-divider" role="presentation"><span class="filler">&nbsp;</span></div>
+                                        <a href="https://www.jinhong.org/moodle/login/logout.php?sesskey=LZxOoGa69P" class="dropdown-item menu-action" role="menuitem" data-title="logout,moodle" aria-labelledby="actionmenuaction-6">
+                                                <i class="icon fa fa-sign-out fa-fw " aria-hidden="true"></i>
+                                            <span class="menu-action-text" id="actionmenuaction-6">
+                                                Log out
+                                            </span>
+                                        </a>
+                            </div>
+                    </div>
+                </div>
+
+        </div>
+
+</div></div>
+                </li>
+            </ul>
+            <!-- search_box -->
+    </nav>
+    
+    <div id="nav-drawer" data-region="drawer" class="d-print-none moodle-has-zindex " aria-hidden="false" tabindex="-1">
+        <nav class="list-group" aria-label="CITS1401 2022S2">
+            <ul>
+                    <li>
+                        <a class="list-group-item list-group-item-action  " href="https://www.jinhong.org/moodle/course/view.php?id=18" data-key="coursehome" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="60" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0">
+                            <div class="ml-0">
+                                <div class="media">
+                                        <span class="media-left">
+                                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"></i>
+                                        </span>
+                                    <span class="media-body ">CITS1401 2022S2</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="list-group-item list-group-item-action  " href="https://www.jinhong.org/moodle/user/index.php?id=18" data-key="participants" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="90" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="18">
+                            <div class="ml-0">
+                                <div class="media">
+                                        <span class="media-left">
+                                            <i class="icon fa fa-users fa-fw " aria-hidden="true"></i>
+                                        </span>
+                                    <span class="media-body ">Participants</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="list-group-item list-group-item-action  " href="https://www.jinhong.org/moodle/grade/report/index.php?id=18" data-key="grades" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="70" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="18">
+                            <div class="ml-0">
+                                <div class="media">
+                                        <span class="media-left">
+                                            <i class="icon fa fa-table fa-fw " aria-hidden="true"></i>
+                                        </span>
+                                    <span class="media-body ">Grades</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="list-group-item list-group-item-action  " href="https://www.jinhong.org/moodle/course/view.php?id=18#section-0" data-key="97" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="18">
+                            <div class="ml-0">
+                                <div class="media">
+                                        <span class="media-left">
+                                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"></i>
+                                        </span>
+                                    <span class="media-body ">General</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="list-group-item list-group-item-action active " href="https://www.jinhong.org/moodle/course/view.php?id=18#section-1" data-key="98" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="1" data-isactive="1" data-hidden="0" data-preceedwithhr="0" data-parent-key="18">
+                            <div class="ml-0">
+                                <div class="media">
+                                        <span class="media-left">
+                                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"></i>
+                                        </span>
+                                    <span class="media-body font-weight-bold">Labs</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    </ul>
+                    </nav>
+                    <nav class="list-group mt-1" aria-label="Site">
+                    <ul>
+                    <li>
+                        <a class="list-group-item list-group-item-action  " href="https://www.jinhong.org/moodle/" data-key="home" data-isexpandable="0" data-indent="0" data-showdivider="1" data-type="1" data-nodetype="1" data-collapse="0" data-forceopen="1" data-isactive="0" data-hidden="0" data-preceedwithhr="0">
+                            <div class="ml-0">
+                                <div class="media">
+                                        <span class="media-left">
+                                            <i class="icon fa fa-home fa-fw " aria-hidden="true"></i>
+                                        </span>
+                                    <span class="media-body ">Home</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="list-group-item list-group-item-action  " href="https://www.jinhong.org/moodle/my/" data-key="myhome" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="70" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="home">
+                            <div class="ml-0">
+                                <div class="media">
+                                        <span class="media-left">
+                                            <i class="icon fa fa-tachometer fa-fw " aria-hidden="true"></i>
+                                        </span>
+                                    <span class="media-body ">Dashboard</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="list-group-item list-group-item-action  " href="https://www.jinhong.org/moodle/calendar/view.php?view=month&amp;course=18" data-key="calendar" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="60" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="1">
+                            <div class="ml-0">
+                                <div class="media">
+                                        <span class="media-left">
+                                            <i class="icon fa fa-calendar fa-fw " aria-hidden="true"></i>
+                                        </span>
+                                    <span class="media-body ">Calendar</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="list-group-item list-group-item-action  " href="https://www.jinhong.org/moodle/user/files.php" data-key="privatefiles" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="70" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="1">
+                            <div class="ml-0">
+                                <div class="media">
+                                        <span class="media-left">
+                                            <i class="icon fa fa-file-o fa-fw " aria-hidden="true"></i>
+                                        </span>
+                                    <span class="media-body ">Private files</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="list-group-item " data-key="mycourses" data-isexpandable="1" data-indent="0" data-showdivider="0" data-type="0" data-nodetype="1" data-collapse="0" data-forceopen="1" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="home">
+                            <div class="ml-0">
+                                <div class="media">
+                                        <span class="media-left">
+                                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"></i>
+                                        </span>
+                                    <span class="media-body">My courses</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="list-group-item list-group-item-action  " href="https://www.jinhong.org/moodle/course/view.php?id=18" data-key="18" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="1" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+                            <div class="ml-1">
+                                <div class="media">
+                                        <span class="media-left">
+                                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"></i>
+                                        </span>
+                                    <span class="media-body ">CITS1401 2022S2</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="page" class="container-fluid d-print-block">
+        <header id="page-header" class="row">
+    <div class="col-12 pt-3 pb-3">
+        <div class="card ">
+            <div class="card-body ">
+                <div class="d-sm-flex align-items-center">
+                    <div class="mr-auto">
+                        <div class="page-context-header"><div class="page-header-headings"><h1>CITS1401 Computational Thinking with Python (2022S2)</h1></div></div>
+                    </div>
+
+                    <div class="header-actions-container flex-shrink-0" data-region="header-actions-container">
+                    </div>
+                </div>
+                <div class="d-flex flex-wrap">
+                    <div id="page-navbar">
+                        <nav aria-label="Navigation bar">
+    <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="https://www.jinhong.org/moodle/">Home</a>
+                </li>
+        
+                <li class="breadcrumb-item">My courses</li>
+        
+                <li class="breadcrumb-item">
+                    <a href="https://www.jinhong.org/moodle/course/view.php?id=18" title="CITS1401 Computational Thinking with Python (2022S2)">CITS1401 2022S2</a>
+                </li>
+        
+                <li class="breadcrumb-item">
+                    <a href="https://www.jinhong.org/moodle/course/view.php?id=18#section-1">Labs</a>
+                </li>
+        
+                <li class="breadcrumb-item">
+                    <a href="https://www.jinhong.org/moodle/mod/quiz/view.php?id=1142" aria-current="page" title="Quiz">Lab 02. Functions in Python</a>
+                </li>
+        </ol>
+</nav>
+                    </div>
+                    <div class="ml-auto d-flex">
+                        
+                    </div>
+                    <div id="course-header">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <div id="page-content" class="row pb-3 d-print-block">
+            <div id="region-main-box" class="col-12">
+                <section id="region-main" class="has-blocks mb-3" aria-label="Content">
+
+                    <span class="notifications" id="user-notifications"></span>
+                    <div role="main" id="yui_3_17_2_1_1660491646885_179"><span id="maincontent"></span><form action="https://www.jinhong.org/moodle/mod/quiz/processattempt.php?cmid=1142" method="post" enctype="multipart/form-data" accept-charset="utf-8" id="responseform" autocomplete="off"><div id="yui_3_17_2_1_1660491646885_178"><div id="question-66627-4" class="que coderunner adaptive_adapted_for_coderunner notyetanswered"><div class="info"><h3 class="no">Question <span class="qno">3</span></h3><div class="state">Not complete</div><div class="grade">Marked out of 2.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1660491646885_102"><input type="hidden" name="q66627:4_:flagged" value="0" id="yui_3_17_2_1_1660491646885_27"><input type="hidden" value="qaid=980846&amp;qubaid=66627&amp;qid=70379&amp;slot=4&amp;checksum=98f55d886ae584bae5c5d0f0cd2ad106&amp;sesskey=LZxOoGa69P&amp;newstate=" class="questionflagpostdata" id="yui_3_17_2_1_1660491646885_28">
+<input type="hidden" class="questionflagvalue" id="q66627:4_:flaggedcheckbox" name="q66627:4_:flagged" value="0"><input type="image" class="questionflagimage" src="./Lab 02. Functions in Python (page 2 of 3)_files/unflagged.svg" title="Flag this question for future reference" alt="Not flagged"><span class="questionflagtext" title="Flag this question for future reference">Flag question</span></div></div><div class="content" id="yui_3_17_2_1_1660491646885_177"><div class="formulation clearfix" id="yui_3_17_2_1_1660491646885_176"><h4 class="accesshide">Question text</h4><input type="hidden" name="q66627:4_:sequencecheck" value="2" id="yui_3_17_2_1_1660491646885_29"><p></p><p>The CodeRunner questions you met earlier in this lab asked you to write a program to some specification. However, most of the CodeRunner questions in this course will ask you to write a <b>function</b> to some specification. This simplifies the questions because we don't need to specify exactly what names to use for certain variables, nor exactly how to initialise them or read external data into them.</p><p id="yui_3_17_2_1_1660491646885_175">To get the hang of a CodeRunner function question, here's one to which you should already know the answer.</p><h4>The question<br></h4>Write a function <em>to_celsius(fahrenheit)</em> that takes a float temperature in degrees fahrenheit and <b>returns</b> the equivalent temperature in degrees celsius. The formula is:<p></p>
+<pre>degrees_celsius = (fahrenheit - 32) * (5 / 9)</pre>
+<p>See the examples below for expected output.</p><p>Note that you must write in&nbsp;<span><span><b>only</b><i style="font-weight: bold;">&nbsp;the function implementation itself</i>, without any of the tests or execution of function statements. The first two lines of the answer have been provided in the answer box.</span></span></p><p><span><span>The penalty regime for this question is 0, 10, 20, ..., meaning that you can submit one wrong answer without penalty but thereafter you will pay a penalty of 10% for each wrong submission. So if you get it wrong first time and are not sure why, ask a lab facilitator for help.</span></span></p><p class="for-example-para">For example:</p><div class="coderunner-examples"><table class="coderunnerexamples">
+<thead>
+<tr>
+<th class="header c0" style="" scope="col">Test</th>
+<th class="header c1 lastcol" style="" scope="col">Result</th>
+</tr>
+</thead>
+<tbody><tr class="r0">
+<td class="cell c0" style=""><pre class="tablecell">degrees = to_celsius(32.0)
+print(degrees)</pre></td>
+<td class="cell c1 lastcol" style=""><pre class="tablecell">0.0</pre></td>
+</tr>
+<tr class="r1 lastrow">
+<td class="cell c0" style=""><pre class="tablecell">degrees = to_celsius(212.0)
+print(degrees)</pre></td>
+<td class="cell c1 lastcol" style=""><pre class="tablecell">100.0</pre></td>
+</tr>
+</tbody>
+</table>
+</div><div class="prompt"><label class="answerprompt" for="ace_id_q66627:7_answer">Answer:</label><span class="penaltyregime">(penalty regime: 0, 0, 10, ... %)</span></div><input type="button" id="q66627:4_-resetbutton" name="q66627:4_-resetbutton" value="Reset answer" class="answer_reset_btn btn btn-secondary" data-reload-text="def to_celsius(fahrenheit):
+    &quot;&quot;&quot;Return the given fahrenheit temperature in degrees celsius&quot;&quot;&quot;
+    "><textarea class="coderunner-answer edit_code" name="q66627:4_answer" id="id_q66627:4_answer" spellcheck="false" rows="18" data-params="{&quot;proscribedfunctions&quot;:[&quot;print&quot;],&quot;pylintoptions&quot;:[&quot;--disable=C0111,W0613,E0602&quot;]}" data-globalextra="" data-lang="Python3" data-test0="degrees = to_celsius(32.0)
+print(degrees)" style="display: none;">def to_celsius(fahrenheit):
+    """Return the given fahrenheit temperature in degrees celsius"""
+    </textarea><div id="id_q66627:4_answer_wrapper" class="ui_wrapper" style="resize: vertical; overflow: hidden; min-height: 411px; width: 100%; border: 1px solid darkgrey;"><div class=" ace_editor ace_hidpi ace-tm" style="resize: none; height: 395px; width: 361.833px;"><textarea class="ace_text-input" wrap="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="opacity: 0; font-size: 1px; height: 1px; width: 1px; transform: translate(46px, 18px);" id="ace_id_q66627:7_answer"></textarea><div class="ace_gutter moodle-has-zindex" aria-hidden="true" style="left: 0px; width: 43px;"><div class="ace_layer ace_gutter-layer ace_folding-enabled" style="height: 1e+06px; transform: translate(0px, 0px); width: 43px;"><div class="ace_gutter-cell ace_gutter-active-line " style="height: 18px; top: 0px;">1<span class="ace_fold-widget ace_start ace_open" style="display: inline-block; height: 18px;"></span></div><div class="ace_gutter-cell " style="height: 18px; top: 18px;">2<span style="display: none;"></span></div><div class="ace_gutter-cell " style="height: 18px; top: 36px;">3<span style="display: none;"></span></div></div></div><div class="ace_scroller" style="line-height: 18px; left: 42.2471px; right: 0px; bottom: 0px;"><div class="ace_content" style="transform: translate(0px, 0px); width: 569px; height: 414px;"><div class="ace_layer ace_print-margin-layer"><div class="ace_print-margin" style="left: 664px; visibility: visible;"></div></div><div class="ace_layer ace_marker-layer"><div class="ace_active-line" style="height: 18px; top: 0px; left: 0px; right: 0px;"></div></div><div class="ace_layer ace_text-layer" style="height: 1e+06px; margin: 0px 4px; transform: translate(0px, 0px);"><div class="ace_line" style="height: 18px; top: 0px;"><span class="ace_keyword">def</span> <span class="ace_identifier">to_celsius</span><span class="ace_paren ace_lparen">(</span><span class="ace_identifier">fahrenheit</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation">:</span></div><div class="ace_line" style="height: 18px; top: 18px;">    <span class="ace_string">"""Return the given fahrenheit temperature in degrees celsius"""</span></div><div class="ace_line" style="height: 18px; top: 36px;">    </div></div><div class="ace_layer ace_marker-layer"></div><div class="ace_layer ace_cursor-layer ace_hidden-cursors"><div class="ace_cursor" style="display: block; transform: translate(4px, 0px); width: 8px; height: 18px;"></div></div></div></div><div class="ace_scrollbar ace_scrollbar-v" style="display: none; width: 22px; bottom: 17px;"><div class="ace_scrollbar-inner" style="width: 22px; height: 54px;">&nbsp;</div></div><div class="ace_scrollbar ace_scrollbar-h" style="height: 22px; left: 42.2471px; right: 0px;"><div class="ace_scrollbar-inner" style="height: 22px; width: 569px;">&nbsp;</div></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: hidden;"><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: visible;">הההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההה</div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font-style: inherit; font-variant: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; overflow: visible;">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div></div></div></div><div class="im-controls"><input type="submit" id="q66627:4_-submit" name="q66627:4_-submit" value="Check" class="submit btn btn-secondary"></div></div></div></div><div id="question-66627-5" class="que coderunner adaptive_adapted_for_coderunner notyetanswered"><div class="info"><h3 class="no">Question <span class="qno">4</span></h3><div class="state">Not complete</div><div class="grade">Marked out of 2.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1660491646885_110"><input type="hidden" name="q66627:5_:flagged" value="0" id="yui_3_17_2_1_1660491646885_30"><input type="hidden" value="qaid=980847&amp;qubaid=66627&amp;qid=70381&amp;slot=5&amp;checksum=5c545e886860fab7640c3f8f99ea4796&amp;sesskey=LZxOoGa69P&amp;newstate=" class="questionflagpostdata" id="yui_3_17_2_1_1660491646885_31">
+<input type="hidden" class="questionflagvalue" id="q66627:5_:flaggedcheckbox" name="q66627:5_:flagged" value="0"><input type="image" class="questionflagimage" src="./Lab 02. Functions in Python (page 2 of 3)_files/unflagged.svg" title="Flag this question for future reference" alt="Not flagged"><span class="questionflagtext" title="Flag this question for future reference">Flag question</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q66627:5_:sequencecheck" value="2" id="yui_3_17_2_1_1660491646885_32"><p>Write a function <code>days_in_years(number_of_years)</code> that returns the number of days in the given number of years. You may assume that there are exactly 365 days in every year and that the numbers of years will always be a whole number.</p>
+<p>For example:</p>
+<pre class="coderunner-examples">days_in_years(1) → 365<br>days_in_years(15) → 5475</pre>
+<p>Remember: w<span dir="ltr">rite the answer in Thonny first and test it before submitting the code to the quiz server.</span></p>
+<p>Below, we have pre-filled some of the answer for you. Note that your function must <i><b>return</b></i>&nbsp;the answer, not print it.</p><p><b>WARNING</b>: from now on in this lab and the rest of the course, the standard CodeRunner penalty regime of 0, 10, 20, ... will apply. That is, you have one free <i>Check&nbsp;</i>submission, you pay a penalty of 10% for the next wrong <i>Check </i>submission, 20% for the following one and so on. <br></p><p class="for-example-para">For example:</p><div class="coderunner-examples"><table class="coderunnerexamples">
+<thead>
+<tr>
+<th class="header c0" style="" scope="col">Test</th>
+<th class="header c1 lastcol" style="" scope="col">Result</th>
+</tr>
+</thead>
+<tbody><tr class="r0">
+<td class="cell c0" style=""><pre class="tablecell">days = days_in_years(2)
+print(days)</pre></td>
+<td class="cell c1 lastcol" style=""><pre class="tablecell">730</pre></td>
+</tr>
+<tr class="r1 lastrow">
+<td class="cell c0" style=""><pre class="tablecell">days = days_in_years(10)
+print(days)</pre></td>
+<td class="cell c1 lastcol" style=""><pre class="tablecell">3650</pre></td>
+</tr>
+</tbody>
+</table>
+</div><div class="prompt"><label class="answerprompt" for="ace_id_q66627:7_answer">Answer:</label><span class="penaltyregime">(penalty regime: 0, 0, 10, ... %)</span></div><input type="button" id="q66627:5_-resetbutton" name="q66627:5_-resetbutton" value="Reset answer" class="answer_reset_btn btn btn-secondary" data-reload-text="def days_in_years(number_of_years):
+    &quot;&quot;&quot; Return the number of days in the given number of years, assuming
+        exactly 365 days in all years.
+    &quot;&quot;&quot;
+    # Your code goes here"><textarea class="coderunner-answer edit_code" name="q66627:5_answer" id="id_q66627:5_answer" spellcheck="false" rows="18" data-params="{}" data-globalextra="" data-lang="Python3" data-test0="days = days_in_years(2)
+print(days)" style="display: none;">def days_in_years(number_of_years):
+    """ Return the number of days in the given number of years, assuming
+        exactly 365 days in all years.
+    """
+    # Your code goes here</textarea><div id="id_q66627:5_answer_wrapper" class="ui_wrapper" style="resize: vertical; overflow: hidden; min-height: 411px; width: 100%; border: 1px solid darkgrey;"><div class=" ace_editor ace_hidpi ace-tm" style="resize: none; height: 395px; width: 361.833px;"><textarea class="ace_text-input" wrap="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="opacity: 0; font-size: 1px; height: 1px; width: 1px; transform: translate(46px, 18px);" id="ace_id_q66627:7_answer"></textarea><div class="ace_gutter moodle-has-zindex" aria-hidden="true" style="left: 0px; width: 43px;"><div class="ace_layer ace_gutter-layer ace_folding-enabled" style="height: 1e+06px; transform: translate(0px, 0px); width: 43px;"><div class="ace_gutter-cell ace_gutter-active-line " style="height: 18px; top: 0px;">1<span class="ace_fold-widget ace_start ace_open" style="display: inline-block; height: 18px;"></span></div><div class="ace_gutter-cell " style="height: 18px; top: 18px;">2<span style="display: none;"></span></div><div class="ace_gutter-cell " style="height: 18px; top: 36px;">3<span style="display: none;"></span></div><div class="ace_gutter-cell " style="height: 18px; top: 54px;">4<span style="display: none;"></span></div><div class="ace_gutter-cell " style="height: 18px; top: 72px;">5<span style="display: none;"></span></div></div></div><div class="ace_scroller" style="line-height: 18px; left: 42.2471px; right: 0px; bottom: 0px;"><div class="ace_content" style="transform: translate(0px, 0px); width: 602px; height: 414px;"><div class="ace_layer ace_print-margin-layer"><div class="ace_print-margin" style="left: 664px; visibility: visible;"></div></div><div class="ace_layer ace_marker-layer"><div class="ace_active-line" style="height: 18px; top: 0px; left: 0px; right: 0px;"></div></div><div class="ace_layer ace_text-layer" style="height: 1e+06px; margin: 0px 4px; transform: translate(0px, 0px);"><div class="ace_line" style="height: 18px; top: 0px;"><span class="ace_keyword">def</span> <span class="ace_identifier">days_in_years</span><span class="ace_paren ace_lparen">(</span><span class="ace_identifier">number_of_years</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation">:</span></div><div class="ace_line" style="height: 18px; top: 18px;">    <span class="ace_string">""" Return the number of days in the given number of years, assuming</span></div><div class="ace_line" style="height: 18px; top: 36px;"><span class="ace_indent-guide">    </span><span class="ace_string">    exactly 365 days in all years.</span></div><div class="ace_line" style="height: 18px; top: 54px;"><span class="ace_string">    """</span></div><div class="ace_line" style="height: 18px; top: 72px;">    <span class="ace_comment"># Your code goes here</span></div></div><div class="ace_layer ace_marker-layer"></div><div class="ace_layer ace_cursor-layer ace_hidden-cursors"><div class="ace_cursor" style="display: block; transform: translate(4px, 0px); width: 8px; height: 18px;"></div></div></div></div><div class="ace_scrollbar ace_scrollbar-v" style="display: none; width: 22px; bottom: 17px;"><div class="ace_scrollbar-inner" style="width: 22px; height: 90px;">&nbsp;</div></div><div class="ace_scrollbar ace_scrollbar-h" style="height: 22px; left: 42.2471px; right: 0px;"><div class="ace_scrollbar-inner" style="height: 22px; width: 602px;">&nbsp;</div></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: hidden;"><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: visible;">הההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההה</div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font-style: inherit; font-variant: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; overflow: visible;">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div></div></div></div><div class="im-controls"><input type="submit" id="q66627:5_-submit" name="q66627:5_-submit" value="Check" class="submit btn btn-secondary"></div></div></div></div><div id="question-66627-6" class="que coderunner adaptive_adapted_for_coderunner notyetanswered"><div class="info"><h3 class="no">Question <span class="qno">5</span></h3><div class="state">Not complete</div><div class="grade">Marked out of 2.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1660491646885_118"><input type="hidden" name="q66627:6_:flagged" value="0" id="yui_3_17_2_1_1660491646885_33"><input type="hidden" value="qaid=980848&amp;qubaid=66627&amp;qid=70382&amp;slot=6&amp;checksum=56ee68d88c340ed22bfd0a3b7de273e7&amp;sesskey=LZxOoGa69P&amp;newstate=" class="questionflagpostdata" id="yui_3_17_2_1_1660491646885_34">
+<input type="hidden" class="questionflagvalue" id="q66627:6_:flaggedcheckbox" name="q66627:6_:flagged" value="0"><input type="image" class="questionflagimage" src="./Lab 02. Functions in Python (page 2 of 3)_files/unflagged.svg" title="Flag this question for future reference" alt="Not flagged"><span class="questionflagtext" title="Flag this question for future reference">Flag question</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q66627:6_:sequencecheck" value="2" id="yui_3_17_2_1_1660491646885_35"><p>Write a function <em>calculate_cartons(eggs)</em> for a small local farm that takes a number of eggs and returns the number of egg cartons that will be needed to pack these eggs, assuming 12 eggs fit into a carton. Don't worry about any left over eggs (they will be eaten by the owner for breakfast).&nbsp;</p><p class="for-example-para">For example:</p><div class="coderunner-examples"><table class="coderunnerexamples">
+<thead>
+<tr>
+<th class="header c0" style="" scope="col">Test</th>
+<th class="header c1 lastcol" style="" scope="col">Result</th>
+</tr>
+</thead>
+<tbody><tr class="r0">
+<td class="cell c0" style=""><pre class="tablecell">cartons = calculate_cartons(12)
+print(cartons)</pre></td>
+<td class="cell c1 lastcol" style=""><pre class="tablecell">1</pre></td>
+</tr>
+<tr class="r1 lastrow">
+<td class="cell c0" style=""><pre class="tablecell">cartons = calculate_cartons(65)
+print(cartons)</pre></td>
+<td class="cell c1 lastcol" style=""><pre class="tablecell">5</pre></td>
+</tr>
+</tbody>
+</table>
+</div><div class="prompt"><label class="answerprompt" for="ace_id_q66627:7_answer">Answer:</label><span class="penaltyregime">(penalty regime: 0, 10, 20, ... %)</span></div><input type="button" id="q66627:6_-resetbutton" name="q66627:6_-resetbutton" value="Reset answer" class="answer_reset_btn btn btn-secondary" data-reload-text="def calculate_cartons(eggs):
+    &quot;&quot;&quot; Calculate the number of cartons needed to hold 
+        the specified number of eggs.
+    &quot;&quot;&quot;
+    "><textarea class="coderunner-answer edit_code" name="q66627:6_answer" id="id_q66627:6_answer" spellcheck="false" rows="18" data-params="{&quot;requiredconstructs&quot;:[&quot;return&quot;],&quot;proscribedfunctions&quot;:[&quot;print&quot;]}" data-globalextra="" data-lang="Python3" data-test0="cartons = calculate_cartons(12)
+print(cartons)" style="display: none;">def calculate_cartons(eggs):
+    """ Calculate the number of cartons needed to hold 
+        the specified number of eggs.
+    """
+    </textarea><div id="id_q66627:6_answer_wrapper" class="ui_wrapper" style="resize: vertical; overflow: hidden; min-height: 411px; width: 100%; border: 1px solid darkgrey;"><div class=" ace_editor ace_hidpi ace-tm" style="resize: none; height: 395px; width: 361.833px;"><textarea class="ace_text-input" wrap="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="opacity: 0; font-size: 1px; height: 1px; width: 1px; transform: translate(46px, 18px);" id="ace_id_q66627:7_answer"></textarea><div class="ace_gutter moodle-has-zindex" aria-hidden="true" style="left: 0px; width: 43px;"><div class="ace_layer ace_gutter-layer ace_folding-enabled" style="height: 1e+06px; transform: translate(0px, 0px); width: 43px;"><div class="ace_gutter-cell ace_gutter-active-line " style="height: 18px; top: 0px;">1<span class="ace_fold-widget ace_start ace_open" style="display: inline-block; height: 18px;"></span></div><div class="ace_gutter-cell " style="height: 18px; top: 18px;">2<span style="display: none;"></span></div><div class="ace_gutter-cell " style="height: 18px; top: 36px;">3<span style="display: none;"></span></div><div class="ace_gutter-cell " style="height: 18px; top: 54px;">4<span style="display: none;"></span></div><div class="ace_gutter-cell " style="height: 18px; top: 72px;">5<span style="display: none;"></span></div></div></div><div class="ace_scroller" style="line-height: 18px; left: 42.2471px; right: 0px; bottom: 0px;"><div class="ace_content" style="transform: translate(0px, 0px); width: 462px; height: 414px;"><div class="ace_layer ace_print-margin-layer"><div class="ace_print-margin" style="left: 664px; visibility: visible;"></div></div><div class="ace_layer ace_marker-layer"><div class="ace_active-line" style="height: 18px; top: 0px; left: 0px; right: 0px;"></div></div><div class="ace_layer ace_text-layer" style="height: 1e+06px; margin: 0px 4px; transform: translate(0px, 0px);"><div class="ace_line" style="height: 18px; top: 0px;"><span class="ace_keyword">def</span> <span class="ace_identifier">calculate_cartons</span><span class="ace_paren ace_lparen">(</span><span class="ace_identifier">eggs</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation">:</span></div><div class="ace_line" style="height: 18px; top: 18px;">    <span class="ace_string">""" Calculate the number of cartons needed to hold </span></div><div class="ace_line" style="height: 18px; top: 36px;"><span class="ace_indent-guide">    </span><span class="ace_string">    the specified number of eggs.</span></div><div class="ace_line" style="height: 18px; top: 54px;"><span class="ace_string">    """</span></div><div class="ace_line" style="height: 18px; top: 72px;">    </div></div><div class="ace_layer ace_marker-layer"></div><div class="ace_layer ace_cursor-layer ace_hidden-cursors"><div class="ace_cursor" style="display: block; transform: translate(4px, 0px); width: 8px; height: 18px;"></div></div></div></div><div class="ace_scrollbar ace_scrollbar-v" style="display: none; width: 22px; bottom: 17px;"><div class="ace_scrollbar-inner" style="width: 22px; height: 90px;">&nbsp;</div></div><div class="ace_scrollbar ace_scrollbar-h" style="height: 22px; left: 42.2471px; right: 0px;"><div class="ace_scrollbar-inner" style="height: 22px; width: 462px;">&nbsp;</div></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: hidden;"><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: visible;">הההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההה</div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font-style: inherit; font-variant: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; overflow: visible;">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div></div></div></div><div class="im-controls"><input type="submit" id="q66627:6_-submit" name="q66627:6_-submit" value="Check" class="submit btn btn-secondary"></div></div></div></div><div id="question-66627-7" class="que coderunner adaptive_adapted_for_coderunner notyetanswered"><div class="info"><h3 class="no">Question <span class="qno">6</span></h3><div class="state">Not complete</div><div class="grade">Marked out of 3.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1660491646885_126"><input type="hidden" name="q66627:7_:flagged" value="0" id="yui_3_17_2_1_1660491646885_36"><input type="hidden" value="qaid=980849&amp;qubaid=66627&amp;qid=70383&amp;slot=7&amp;checksum=df0344db32e3c3de5101f6d32fe3c950&amp;sesskey=LZxOoGa69P&amp;newstate=" class="questionflagpostdata" id="yui_3_17_2_1_1660491646885_37">
+<input type="hidden" class="questionflagvalue" id="q66627:7_:flaggedcheckbox" name="q66627:7_:flagged" value="0"><input type="image" class="questionflagimage" src="./Lab 02. Functions in Python (page 2 of 3)_files/unflagged.svg" title="Flag this question for future reference" alt="Not flagged"><span class="questionflagtext" title="Flag this question for future reference">Flag question</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q66627:7_:sequencecheck" value="2" id="yui_3_17_2_1_1660491646885_38"><p>Create a function <em>dinner_calculator(meal_cost, drinks_cost)</em> that calculates and returns the total cost of the meal for a small restaurant during happy hour (drinks only are discounted).</p>
+<ul>
+<li>The function takes two values, the cost of the meals and drinks before GST.</li>
+<li>Before GST is applied, a 30% discount needs to be applied to the drinks cost.</li>
+<li>Goods and services tax (GST) needs to be added to the meal and drinks cost, GST is set to 15%.</li>
+<li>The function should return the total cost.</li></ul>In our tests, we round the answer you return to 2 decimal places before printing but don't worry about that - your function should simply return the exact answer (to the extent that any floating point calculation is "exact").<ul>
+</ul><p class="for-example-para">For example:</p><div class="coderunner-examples"><table class="coderunnerexamples">
+<thead>
+<tr>
+<th class="header c0" style="" scope="col">Test</th>
+<th class="header c1 lastcol" style="" scope="col">Result</th>
+</tr>
+</thead>
+<tbody><tr class="r0">
+<td class="cell c0" style=""><pre class="tablecell">total_cost = dinner_calculator(10, 0)
+# We round your answer to 2 decimal places before printing.
+# Don't worry about why.
+print(round(total_cost, 2)) </pre></td>
+<td class="cell c1 lastcol" style=""><pre class="tablecell">11.5</pre></td>
+</tr>
+<tr class="r1 lastrow">
+<td class="cell c0" style=""><pre class="tablecell">total_cost = dinner_calculator(12, 4)
+# We round your answer to 2 decimal places before printing.
+# Don't worry about why.
+print(round(total_cost, 2)) </pre></td>
+<td class="cell c1 lastcol" style=""><pre class="tablecell">17.02</pre></td>
+</tr>
+</tbody>
+</table>
+</div><div class="prompt"><label class="answerprompt" for="ace_id_q66627:7_answer">Answer:</label><span class="penaltyregime">(penalty regime: 0, 10, 20, ... %)</span></div><input type="button" id="q66627:7_-resetbutton" name="q66627:7_-resetbutton" value="Reset answer" class="answer_reset_btn btn btn-secondary" data-reload-text="def dinner_calculator(meal_cost, drinks_cost):
+    &quot;&quot;&quot; Calculate the cost of dinner during happy hour.
+        Takes into consideration:
+         - Pre-GST meal and drink costs
+         - Happy Hour discounts
+         - GST
+    &quot;&quot;&quot;
+    "><textarea class="coderunner-answer edit_code" name="q66627:7_answer" id="id_q66627:7_answer" spellcheck="false" rows="18" data-params="{&quot;requiredconstructs&quot;:[&quot;return&quot;],&quot;proscribedfunctions&quot;:[&quot;print&quot;]}" data-globalextra="" data-lang="Python3" data-test0="total_cost = dinner_calculator(10, 0)
+# We round your answer to 2 decimal places before printing.
+# Don&#39;t worry about why.
+print(round(total_cost, 2)) " style="display: none;">def dinner_calculator(meal_cost, drinks_cost):
+    """ Calculate the cost of dinner during happy hour.
+        Takes into consideration:
+         - Pre-GST meal and drink costs
+         - Happy Hour discounts
+         - GST
+    """
+    </textarea><div id="id_q66627:7_answer_wrapper" class="ui_wrapper" style="resize: vertical; overflow: hidden; min-height: 411px; width: 100%; border: 1px solid darkgrey;"><div class=" ace_editor ace_hidpi ace-tm" style="resize: none; height: 395px; width: 361.833px;"><textarea class="ace_text-input" wrap="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="opacity: 0; font-size: 1px; height: 1px; width: 1px; transform: translate(46px, 18px);"></textarea><div class="ace_gutter" aria-hidden="true" style="left: 0px; width: 43px;"><div class="ace_layer ace_gutter-layer ace_folding-enabled" style="height: 1e+06px; transform: translate(0px, 0px); width: 43px;"><div class="ace_gutter-cell ace_gutter-active-line " style="height: 18px; top: 0px;">1<span class="ace_fold-widget ace_start ace_open" style="display: inline-block; height: 18px;"></span></div><div class="ace_gutter-cell " style="height: 18px; top: 18px;">2<span style="display: none;"></span></div><div class="ace_gutter-cell " style="height: 18px; top: 36px;">3<span class="ace_fold-widget ace_start ace_open" style="display: inline-block; height: 18px;"></span></div><div class="ace_gutter-cell " style="height: 18px; top: 54px;">4<span style="display: none;"></span></div><div class="ace_gutter-cell " style="height: 18px; top: 72px;">5<span style="display: none;"></span></div><div class="ace_gutter-cell " style="height: 18px; top: 90px;">6<span style="display: none;"></span></div><div class="ace_gutter-cell " style="height: 18px; top: 108px;">7<span style="display: none;"></span></div><div class="ace_gutter-cell " style="height: 18px; top: 126px;">8<span style="display: none;"></span></div></div></div><div class="ace_scroller" style="line-height: 18px; left: 42.2471px; right: 0px; bottom: 0px;"><div class="ace_content" style="transform: translate(0px, 0px); width: 462px; height: 414px;"><div class="ace_layer ace_print-margin-layer"><div class="ace_print-margin" style="left: 664px; visibility: visible;"></div></div><div class="ace_layer ace_marker-layer"><div class="ace_active-line" style="height: 18px; top: 0px; left: 0px; right: 0px;"></div></div><div class="ace_layer ace_text-layer" style="height: 1e+06px; margin: 0px 4px; transform: translate(0px, 0px);"><div class="ace_line" style="height: 18px; top: 0px;"><span class="ace_keyword">def</span> <span class="ace_identifier">dinner_calculator</span><span class="ace_paren ace_lparen">(</span><span class="ace_identifier">meal_cost</span><span class="ace_punctuation">,</span> <span class="ace_identifier">drinks_cost</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation">:</span></div><div class="ace_line" style="height: 18px; top: 18px;">    <span class="ace_string">""" Calculate the cost of dinner during happy hour.</span></div><div class="ace_line" style="height: 18px; top: 36px;"><span class="ace_indent-guide">    </span><span class="ace_string">    Takes into consideration:</span></div><div class="ace_line" style="height: 18px; top: 54px;"><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_string"> - Pre-GST meal and drink costs</span></div><div class="ace_line" style="height: 18px; top: 72px;"><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_string"> - Happy Hour discounts</span></div><div class="ace_line" style="height: 18px; top: 90px;"><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_string"> - GST</span></div><div class="ace_line" style="height: 18px; top: 108px;"><span class="ace_string">    """</span></div><div class="ace_line" style="height: 18px; top: 126px;">    </div></div><div class="ace_layer ace_marker-layer"></div><div class="ace_layer ace_cursor-layer ace_hidden-cursors"><div class="ace_cursor" style="display: block; transform: translate(4px, 0px); width: 8px; height: 18px;"></div></div></div></div><div class="ace_scrollbar ace_scrollbar-v" style="display: none; width: 22px; bottom: 17px;"><div class="ace_scrollbar-inner" style="width: 22px; height: 144px;">&nbsp;</div></div><div class="ace_scrollbar ace_scrollbar-h" style="height: 22px; left: 42.2471px; right: 0px;"><div class="ace_scrollbar-inner" style="height: 22px; width: 462px;">&nbsp;</div></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: hidden;"><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: visible;">הההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההה</div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font-style: inherit; font-variant: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; overflow: visible;">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div></div></div></div><div class="im-controls"><input type="submit" id="q66627:7_-submit" name="q66627:7_-submit" value="Check" class="submit btn btn-secondary"></div></div></div></div><div class="submitbtns"><input type="submit" name="previous" value="Previous page" class="mod_quiz-prev-nav btn btn-secondary" id="yui_3_17_2_1_1660491646885_39"><input type="submit" name="next" value="Next page" class="mod_quiz-next-nav btn btn-primary" id="yui_3_17_2_1_1660491646885_40"></div><input type="hidden" name="attempt" value="65402" id="yui_3_17_2_1_1660491646885_41"><input type="hidden" name="thispage" value="1" id="followingpage"><input type="hidden" name="nextpage" value="2" id="yui_3_17_2_1_1660491646885_42"><input type="hidden" name="timeup" value="0" id="timeup"><input type="hidden" name="sesskey" value="LZxOoGa69P" id="yui_3_17_2_1_1660491646885_43"><input type="hidden" name="scrollpos" value="" id="scrollpos"><input type="hidden" name="slots" value="4,5,6,7" id="yui_3_17_2_1_1660491646885_44"></div></form><div id="connection-error" style="display: none;" role="alert"><p>Network connection lost. (Autosave failed).</p>
+
+<p>Make a note of any responses entered on this page in the last few minutes, then try to re-connect.</p>
+
+<p>Once connection has been re-established, your responses should be saved and this message will disappear.</p>
+</div><div id="connection-ok" style="display: none;" role="alert"><p>Network connection restored. You may continue safely.</p>
+</div></div>
+                    <div class="mt-5 mb-1 activity-navigation container-fluid">
+<div class="row">
+    <div class="col-md-4">        <div class="float-left">
+                <a href="https://www.jinhong.org/moodle/mod/quiz/view.php?id=1141&amp;forceview=1" id="prev-activity-link" class="btn btn-link" title="Lab 01. Python basics (for late submission or approved special considerations)">◄ Lab 01. Python basics (for late submission or approved special considerations)</a>
+
+        </div>
+</div>
+    <div class="col-md-4">        <div class="mdl-align">
+            <div class="urlselect">
+    <form method="post" action="https://www.jinhong.org/moodle/course/jumpto.php" class="form-inline" id="url_select_f62f9177baea5414">
+        <input type="hidden" name="sesskey" value="LZxOoGa69P">
+            <label for="jump-to-activity" class="sr-only">
+                Jump to...
+            </label>
+        <select id="jump-to-activity" class="custom-select urlselect" name="jump">
+                    <option value="" selected="">Jump to...</option>
+                    <option value="/mod/forum/view.php?id=1136&amp;forceview=1">General Discussion / Help forum</option>
+                    <option value="/mod/forum/view.php?id=1346&amp;forceview=1">Announcements</option>
+                    <option value="/mod/quiz/view.php?id=1139&amp;forceview=1">Lab 00. Introduction</option>
+                    <option value="/mod/quiz/view.php?id=1140&amp;forceview=1">Lab 01. Python basics</option>
+                    <option value="/mod/quiz/view.php?id=1141&amp;forceview=1">Lab 01. Python basics (for late submission or approved special considerations)</option>
+                    <option value="/mod/quiz/view.php?id=1143&amp;forceview=1">Lab 02. Functions in Python (for late submission or approved special considerations)</option>
+                    <option value="/mod/quiz/view.php?id=1144&amp;forceview=1">Lab 03. Conditions and simple loops</option>
+                    <option value="/mod/quiz/view.php?id=1145&amp;forceview=1">Lab 03. Conditions and simple loops (for late submission or approved special considerations)</option>
+                    <option value="/mod/quiz/view.php?id=1146&amp;forceview=1">Lab 04. Strings and Lists</option>
+                    <option value="/mod/quiz/view.php?id=1147&amp;forceview=1">Lab 04. Strings and Lists (for late submission or approved special considerations)</option>
+                    <option value="/mod/quiz/view.php?id=1148&amp;forceview=1">Lab 05. Dictionaries</option>
+                    <option value="/mod/quiz/view.php?id=1149&amp;forceview=1">Lab 05. Dictionaries (for late submission or approved special considerations)</option>
+        </select>
+            <noscript>
+                <input type="submit" class="btn btn-secondary ml-1" value="Go">
+            </noscript>
+    </form>
+</div>
+
+        </div>
+</div>
+    <div class="col-md-4">        <div class="float-right">
+                <a href="https://www.jinhong.org/moodle/mod/quiz/view.php?id=1143&amp;forceview=1" id="next-activity-link" class="btn btn-link" title="Lab 02. Functions in Python (for late submission or approved special considerations)">Lab 02. Functions in Python (for late submission or approved special considerations) ►</a>
+
+        </div>
+</div>
+</div>
+</div>
+                    
+
+                </section>
+                <section data-region="blocks-column" class="d-print-none" aria-label="Blocks">
+                    <aside id="block-region-side-pre" class="block-region" data-blockregion="side-pre" data-droptarget="1"><a href="https://www.jinhong.org/moodle/mod/quiz/attempt.php?attempt=65402&amp;cmid=1142&amp;page=1#sb-1" class="sr-only sr-only-focusable">Skip &lt;span id="mod_quiz_navblock_title"&gt;Quiz navigation&lt;/span&gt;</a>
+
+<section id="mod_quiz_navblock" class=" block block_fake  card mb-3" role="navigation" data-block="_fake" aria-labelledby="instance-fakeid-62f9177baef57-header">
+
+    <div class="card-body p-3">
+
+            <h5 id="instance-fakeid-62f9177baef57-header" class="card-title d-inline"><span id="mod_quiz_navblock_title">Quiz navigation</span></h5>
+
+
+        <div class="card-text content mt-3">
+            <div class="qn_buttons clearfix multipages"><a class="qnbutton answersaved free btn btn-secondary" id="quiznavbutton1" title="Viewed" data-quiz-page="0" href="https://www.jinhong.org/moodle/mod/quiz/attempt.php?attempt=65402&amp;cmid=1142#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Information </span>i<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton notyetanswered free btn btn-secondary" id="quiznavbutton2" title="Not complete" data-quiz-page="0" href="https://www.jinhong.org/moodle/mod/quiz/attempt.php?attempt=65402&amp;cmid=1142#question-66627-2"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>1<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton notyetanswered free btn btn-secondary" id="quiznavbutton3" title="Not complete" data-quiz-page="0" href="https://www.jinhong.org/moodle/mod/quiz/attempt.php?attempt=65402&amp;cmid=1142#question-66627-3"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>2<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton notyetanswered free btn btn-secondary thispage" id="quiznavbutton4" title="Not complete" data-quiz-page="1" href="https://www.jinhong.org/moodle/mod/quiz/attempt.php?attempt=65402&amp;cmid=1142&amp;page=1#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>3<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton notyetanswered free btn btn-secondary thispage" id="quiznavbutton5" title="Not complete" data-quiz-page="1" href="https://www.jinhong.org/moodle/mod/quiz/attempt.php?attempt=65402&amp;cmid=1142&amp;page=1#question-66627-5"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>4<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton notyetanswered free btn btn-secondary thispage" id="quiznavbutton6" title="Not complete" data-quiz-page="1" href="https://www.jinhong.org/moodle/mod/quiz/attempt.php?attempt=65402&amp;cmid=1142&amp;page=1#question-66627-6"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>5<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton notyetanswered free btn btn-secondary thispage" id="quiznavbutton7" title="Not complete" data-quiz-page="1" href="https://www.jinhong.org/moodle/mod/quiz/attempt.php?attempt=65402&amp;cmid=1142&amp;page=1#question-66627-7"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>6<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton notyetanswered free btn btn-secondary" id="quiznavbutton8" title="Not complete" data-quiz-page="2" href="https://www.jinhong.org/moodle/mod/quiz/attempt.php?attempt=65402&amp;cmid=1142&amp;page=2#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>7<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton notyetanswered free btn btn-secondary" id="quiznavbutton9" title="Not complete" data-quiz-page="2" href="https://www.jinhong.org/moodle/mod/quiz/attempt.php?attempt=65402&amp;cmid=1142&amp;page=2#question-66627-9"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>8<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton notyetanswered free btn btn-secondary" id="quiznavbutton10" title="Not complete" data-quiz-page="2" href="https://www.jinhong.org/moodle/mod/quiz/attempt.php?attempt=65402&amp;cmid=1142&amp;page=2#question-66627-10"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>9<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton notyetanswered free btn btn-secondary" id="quiznavbutton11" title="Not complete" data-quiz-page="2" href="https://www.jinhong.org/moodle/mod/quiz/attempt.php?attempt=65402&amp;cmid=1142&amp;page=2#question-66627-11"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>10<span class="accesshide"> <span class="flagstate"></span></span></a></div><div class="othernav"><a class="endtestlink aalink" href="https://www.jinhong.org/moodle/mod/quiz/summary.php?attempt=65402&amp;cmid=1142">Finish attempt ...</a><div id="quiz-timer" role="timer" aria-atomic="true" aria-relevant="text">Time left <span id="quiz-time-left"></span></div></div>
+            <div class="footer"></div>
+            
+        </div>
+
+    </div>
+
+</section>
+
+  <span id="sb-1"></span></aside>
+                </section>
+            </div>
+        </div>
+    </div>
+    
+    <div id="goto-top-link">
+        <a class="btn btn-light" role="button" href="https://www.jinhong.org/moodle/mod/quiz/attempt.php?attempt=65402&amp;cmid=1142&amp;page=1#">
+            <i class="icon fa fa-arrow-up fa-fw " title="Go to top" aria-label="Go to top"></i>
+        </a>
+    </div>
+    <footer id="page-footer" class="py-3 bg-dark text-light">
+        <div class="container">
+            <div id="course-footer"></div>
+    
+    
+            <div class="logininfo">You are logged in as <a href="https://www.jinhong.org/moodle/user/profile.php?id=4059" title="View profile">Zehua Zhu</a> (<a href="https://www.jinhong.org/moodle/login/logout.php?sesskey=LZxOoGa69P">Log out</a>)</div>
+            <div class="tool_usertours-resettourcontainer"></div>
+            <div class="homelink"><a href="https://www.jinhong.org/moodle/course/view.php?id=18">CITS1401 2022S2</a></div>
+            <nav class="nav navbar-nav d-md-none" aria-label="Custom menu">
+                    <ul class="list-unstyled pt-3">
+                    </ul>
+            </nav>
+            <div class="tool_dataprivacy"><a href="https://www.jinhong.org/moodle/admin/tool/dataprivacy/summary.php">Data retention summary</a></div><a href="https://download.moodle.org/mobile?version=2020061500.04&amp;lang=en&amp;iosappid=633359593&amp;androidappid=com.moodle.moodlemobile">Get the mobile app</a>
+            <script>
+//<![CDATA[
+var require = {
+    baseUrl : 'https://www.jinhong.org/moodle/lib/requirejs.php/1623086421/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'https://www.jinhong.org/moodle/lib/javascript.php/1623086421/lib/jquery/jquery-3.4.1.min',
+        jqueryui: 'https://www.jinhong.org/moodle/lib/javascript.php/1623086421/lib/jquery/ui-1.12.1/jquery-ui.min',
+        jqueryprivate: 'https://www.jinhong.org/moodle/lib/javascript.php/1623086421/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+      // Stub module for 'process'. This is a workaround for a bug in MathJax (see MDL-60458).
+      '*': { process: 'core/first' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script src="./Lab 02. Functions in Python (page 2 of 3)_files/javascript(8).php"></script>
+<script>
+//<![CDATA[
+M.util.js_pending("core/first");require(['core/first'], function() {
+require(['core/prefetch']);
+;
+require(["media_videojs/loader"], function(loader) {
+    loader.setUp(function(videojs) {
+        videojs.options.flash.swf = "https://www.jinhong.org/moodle/media/player/videojs/videojs/video-js.swf";
+videojs.addLanguage('en', {
+  "Audio Player": "Audio Player",
+  "Video Player": "Video Player",
+  "Play": "Play",
+  "Pause": "Pause",
+  "Replay": "Replay",
+  "Current Time": "Current Time",
+  "Duration": "Duration",
+  "Remaining Time": "Remaining Time",
+  "Stream Type": "Stream Type",
+  "LIVE": "LIVE",
+  "Seek to live, currently behind live": "Seek to live, currently behind live",
+  "Seek to live, currently playing live": "Seek to live, currently playing live",
+  "Loaded": "Loaded",
+  "Progress": "Progress",
+  "Progress Bar": "Progress Bar",
+  "progress bar timing: currentTime={1} duration={2}": "{1} of {2}",
+  "Fullscreen": "Fullscreen",
+  "Non-Fullscreen": "Non-Fullscreen",
+  "Mute": "Mute",
+  "Unmute": "Unmute",
+  "Playback Rate": "Playback Rate",
+  "Subtitles": "Subtitles",
+  "subtitles off": "subtitles off",
+  "Captions": "Captions",
+  "captions off": "captions off",
+  "Chapters": "Chapters",
+  "Descriptions": "Descriptions",
+  "descriptions off": "descriptions off",
+  "Audio Track": "Audio Track",
+  "Volume Level": "Volume Level",
+  "You aborted the media playback": "You aborted the media playback",
+  "A network error caused the media download to fail part-way.": "A network error caused the media download to fail part-way.",
+  "The media could not be loaded, either because the server or network failed or because the format is not supported.": "The media could not be loaded, either because the server or network failed or because the format is not supported.",
+  "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.": "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.",
+  "No compatible source was found for this media.": "No compatible source was found for this media.",
+  "The media is encrypted and we do not have the keys to decrypt it.": "The media is encrypted and we do not have the keys to decrypt it.",
+  "Play Video": "Play Video",
+  "Close": "Close",
+  "Close Modal Dialog": "Close Modal Dialog",
+  "Modal Window": "Modal Window",
+  "This is a modal window": "This is a modal window",
+  "This modal can be closed by pressing the Escape key or activating the close button.": "This modal can be closed by pressing the Escape key or activating the close button.",
+  ", opens captions settings dialog": ", opens captions settings dialog",
+  ", opens subtitles settings dialog": ", opens subtitles settings dialog",
+  ", opens descriptions settings dialog": ", opens descriptions settings dialog",
+  ", selected": ", selected",
+  "captions settings": "captions settings",
+  "subtitles settings": "subtitles settings",
+  "descriptions settings": "descriptions settings",
+  "Text": "Text",
+  "White": "White",
+  "Black": "Black",
+  "Red": "Red",
+  "Green": "Green",
+  "Blue": "Blue",
+  "Yellow": "Yellow",
+  "Magenta": "Magenta",
+  "Cyan": "Cyan",
+  "Background": "Background",
+  "Window": "Window",
+  "Transparent": "Transparent",
+  "Semi-Transparent": "Semi-Transparent",
+  "Opaque": "Opaque",
+  "Font Size": "Font Size",
+  "Text Edge Style": "Text Edge Style",
+  "None": "None",
+  "Raised": "Raised",
+  "Depressed": "Depressed",
+  "Uniform": "Uniform",
+  "Dropshadow": "Dropshadow",
+  "Font Family": "Font Family",
+  "Proportional Sans-Serif": "Proportional Sans-Serif",
+  "Monospace Sans-Serif": "Monospace Sans-Serif",
+  "Proportional Serif": "Proportional Serif",
+  "Monospace Serif": "Monospace Serif",
+  "Casual": "Casual",
+  "Script": "Script",
+  "Small Caps": "Small Caps",
+  "Reset": "Reset",
+  "restore all settings to the default values": "restore all settings to the default values",
+  "Done": "Done",
+  "Caption Settings Dialog": "Caption Settings Dialog",
+  "Beginning of dialog window. Escape will cancel and close the window.": "Beginning of dialog window. Escape will cancel and close the window.",
+  "End of dialog window.": "End of dialog window.",
+  "{1} is loading.": "{1} is loading.",
+  "Exit Picture-in-Picture": "Exit Picture-in-Picture",
+  "Picture-in-Picture": "Picture-in-Picture"
+});
+
+    });
+});;
+
+require(['jquery', 'message_popup/notification_popover_controller'], function($, controller) {
+    var container = $('#nav-notification-popover-container');
+    var controller = new controller(container);
+    controller.registerEventListeners();
+    controller.registerListNavigationEventListeners();
+});
+;
+
+        require(['jquery', 'core/custom_interaction_events'], function($, CustomEvents) {
+            CustomEvents.define('#jump-to-activity', [CustomEvents.events.accessibleChange]);
+            $('#jump-to-activity').on(CustomEvents.events.accessibleChange, function() {
+                if (!$(this).val()) {
+                    return false;
+                }
+                $('#url_select_f62f9177baea5414').submit();
+            });
+        });
+    ;
+
+M.util.js_pending('theme_boost/loader');
+require(['theme_boost/loader'], function() {
+    M.util.js_complete('theme_boost/loader');
+});
+
+M.util.js_pending('theme_boost/drawer');
+require(['theme_boost/drawer'], function(drawer) {
+    drawer.init();
+    M.util.js_complete('theme_boost/drawer');
+});
+;
+M.util.js_pending('qtype_coderunner/resetbutton'); require(['qtype_coderunner/resetbutton'], function(amd) {amd.initResetButton("q66627:4_-resetbutton", "id_q66627:4_answer", "Discard all your work on this question and reset answer box to original preloaded value?"); M.util.js_complete('qtype_coderunner/resetbutton');});;
+M.util.js_pending('qtype_coderunner/userinterfacewrapper'); require(['qtype_coderunner/userinterfacewrapper'], function(amd) {amd.newUiWrapper("ace", "id_q66627:4_answer"); M.util.js_complete('qtype_coderunner/userinterfacewrapper');});;
+M.util.js_pending('qtype_coderunner/resetbutton'); require(['qtype_coderunner/resetbutton'], function(amd) {amd.initResetButton("q66627:5_-resetbutton", "id_q66627:5_answer", "Discard all your work on this question and reset answer box to original preloaded value?"); M.util.js_complete('qtype_coderunner/resetbutton');});;
+M.util.js_pending('qtype_coderunner/userinterfacewrapper'); require(['qtype_coderunner/userinterfacewrapper'], function(amd) {amd.newUiWrapper("ace", "id_q66627:5_answer"); M.util.js_complete('qtype_coderunner/userinterfacewrapper');});;
+M.util.js_pending('qtype_coderunner/resetbutton'); require(['qtype_coderunner/resetbutton'], function(amd) {amd.initResetButton("q66627:6_-resetbutton", "id_q66627:6_answer", "Discard all your work on this question and reset answer box to original preloaded value?"); M.util.js_complete('qtype_coderunner/resetbutton');});;
+M.util.js_pending('qtype_coderunner/userinterfacewrapper'); require(['qtype_coderunner/userinterfacewrapper'], function(amd) {amd.newUiWrapper("ace", "id_q66627:6_answer"); M.util.js_complete('qtype_coderunner/userinterfacewrapper');});;
+M.util.js_pending('qtype_coderunner/resetbutton'); require(['qtype_coderunner/resetbutton'], function(amd) {amd.initResetButton("q66627:7_-resetbutton", "id_q66627:7_answer", "Discard all your work on this question and reset answer box to original preloaded value?"); M.util.js_complete('qtype_coderunner/resetbutton');});;
+M.util.js_pending('qtype_coderunner/userinterfacewrapper'); require(['qtype_coderunner/userinterfacewrapper'], function(amd) {amd.newUiWrapper("ace", "id_q66627:7_answer"); M.util.js_complete('qtype_coderunner/userinterfacewrapper');});;
+M.util.js_pending('core/notification'); require(['core/notification'], function(amd) {amd.init(24292, [], true); M.util.js_complete('core/notification');});;
+M.util.js_pending('core/log'); require(['core/log'], function(amd) {amd.setConfig({"level":"warn"}); M.util.js_complete('core/log');});;
+M.util.js_pending('core/page_global'); require(['core/page_global'], function(amd) {amd.init(); M.util.js_complete('core/page_global');});M.util.js_complete("core/first");
+});
+//]]>
+</script>
+<script>
+//<![CDATA[
+M.yui.add_module({"core_question_engine":{"name":"core_question_engine","fullpath":"https:\/\/www.jinhong.org\/moodle\/lib\/javascript.php\/1623086421\/question\/qengine.js","requires":["node","event"]}});
+
+//]]>
+</script>
+<script src="./Lab 02. Functions in Python (page 2 of 3)_files/javascript(9).php"></script>
+<script src="./Lab 02. Functions in Python (page 2 of 3)_files/javascript(10).php"></script>
+<script src="./Lab 02. Functions in Python (page 2 of 3)_files/javascript(11).php"></script>
+<script>
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"Last modified","name":"Name","error":"Error","info":"Information","yes":"Yes","no":"No","cancel":"Cancel","changesmadereallygoaway":"You have made changes. Are you sure you want to navigate away and lose your changes?","confirm":"Confirm","areyousure":"Are you sure?","closebuttontitle":"Close","unknownerror":"Unknown error","file":"File","url":"URL"},"repository":{"type":"Type","size":"Size","invalidjson":"Invalid JSON string","nofilesattached":"No files attached","filepicker":"File picker","logout":"Logout","nofilesavailable":"No files available","norepositoriesavailable":"Sorry, none of your current repositories can return files in the required format.","fileexistsdialogheader":"File exists","fileexistsdialog_editor":"A file with that name has already been attached to the text you are editing.","fileexistsdialog_filemanager":"A file with that name has already been attached","renameto":"Rename to \"{$a}\"","referencesexist":"There are {$a} alias\/shortcut files that use this file as their source","select":"Select"},"admin":{"confirmdeletecomments":"You are about to delete comments, are you sure?","confirmation":"Confirmation"},"question":{"flagged":"Flagged"},"quiz":{"functiondisabledbysecuremode":"That functionality is currently disabled","startattempt":"Start attempt","timesup":"Time is up!"},"debug":{"debuginfo":"Debug info","line":"Line","stacktrace":"Stack trace"},"langconfig":{"labelsep":": "}};
+//]]>
+</script>
+<script>
+//<![CDATA[
+(function() {Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"MathJax.Hub.Config({\r\n    config: [\"Accessible.js\", \"Safe.js\"],\r\n    errorSettings: { message: [\"!\"] },\r\n    skipStartupTypeset: true,\r\n    messageStyle: \"none\"\r\n});\r\n","lang":"en"});
+});
+Y.use("moodle-mod_quiz-autosave",function() {M.mod_quiz.autosave.init("60");
+});
+ M.util.js_pending('random62f9177baea541'); Y.use('core_question_flags', function(Y) { M.core_question_flags.init(Y, "https:\/\/www.jinhong.org\/moodle\/question\/toggleflag.php", [{"src":"https:\/\/www.jinhong.org\/moodle\/theme\/image.php\/boost\/core\/1623086421\/i\/unflagged","title":"Flag this question for future reference","alt":"Not flagged"},{"src":"https:\/\/www.jinhong.org\/moodle\/theme\/image.php\/boost\/core\/1623086421\/i\/flagged","title":"Remove flag","alt":"Flagged"}], ["Flag question","Remove flag"]);  M.util.js_complete('random62f9177baea541'); });
+ M.util.js_pending('random62f9177baea542'); Y.use('mod_quiz', function(Y) { M.mod_quiz.init_attempt_form(Y);  M.util.js_complete('random62f9177baea542'); });
+ M.util.js_pending('random62f9177baea543'); Y.use('mod_quiz', function(Y) { M.mod_quiz.nav.init(Y);  M.util.js_complete('random62f9177baea543'); });
+M.util.help_popups.setup(Y);
+ M.util.js_pending('random62f9177baea5415'); Y.use('core_question_engine', function(Y) { M.core_question_engine.init_submit_button(Y, "q66627:4_-submit", "4");  M.util.js_complete('random62f9177baea5415'); });
+ M.util.js_pending('random62f9177baea5416'); Y.use('core_question_engine', function(Y) { M.core_question_engine.init_submit_button(Y, "q66627:5_-submit", "5");  M.util.js_complete('random62f9177baea5416'); });
+ M.util.js_pending('random62f9177baea5417'); Y.use('core_question_engine', function(Y) { M.core_question_engine.init_submit_button(Y, "q66627:6_-submit", "6");  M.util.js_complete('random62f9177baea5417'); });
+ M.util.js_pending('random62f9177baea5418'); Y.use('core_question_engine', function(Y) { M.core_question_engine.init_submit_button(Y, "q66627:7_-submit", "7");  M.util.js_complete('random62f9177baea5418'); });
+ M.util.js_pending('random62f9177baea5419'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random62f9177baea5419'); });
+})();
+//]]>
+</script>
+
+        </div>
+    </footer>
+</div><div id="yui3-css-stamp" style="position: absolute !important; visibility: hidden !important" class=""></div>
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>

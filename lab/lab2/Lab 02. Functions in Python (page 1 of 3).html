@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<!-- saved from url=(0075)https://www.jinhong.org/moodle/mod/quiz/attempt.php?attempt=65402&cmid=1142 -->
+<html dir="ltr" lang="en" xml:lang="en" class="yui3-js-enabled"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Lab 02. Functions in Python (page 1 of 3)</title>
+    <link rel="shortcut icon" href="https://www.jinhong.org/moodle/theme/image.php/boost/theme/1623086421/favicon">
+    
+<meta name="keywords" content="moodle, Lab 02. Functions in Python (page 1 of 3)">
+<link rel="stylesheet" type="text/css" href="./Lab 02. Functions in Python (page 1 of 3)_files/combo"><script charset="utf-8" id="yui_3_17_2_1_1660491623786_8" src="./Lab 02. Functions in Python (page 1 of 3)_files/combo(1)" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1660491623786_19" src="./Lab 02. Functions in Python (page 1 of 3)_files/combo(2)" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1660491623786_108" src="./Lab 02. Functions in Python (page 1 of 3)_files/javascript.php" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1660491623786_134" src="./Lab 02. Functions in Python (page 1 of 3)_files/javascript(1).php" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1660491623786_135" src="./Lab 02. Functions in Python (page 1 of 3)_files/javascript(2).php" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1660491623786_136" src="./Lab 02. Functions in Python (page 1 of 3)_files/combo(3)" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1660491623786_167" src="./Lab 02. Functions in Python (page 1 of 3)_files/javascript(3).php" async=""></script><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="./Lab 02. Functions in Python (page 1 of 3)_files/styles.php">
+<script>
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/www.jinhong.org\/moodle","sesskey":"LZxOoGa69P","sessiontimeout":"7200","themerev":"1623086421","slasharguments":1,"theme":"boost","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1623086421","admin":"admin","svgicons":true,"usertimezone":"Australia\/Perth","contextid":24292,"langrev":1651220976,"templaterev":"1623086421"};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"https:\/\/www.jinhong.org\/moodle\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/www.jinhong.org\/moodle\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/www.jinhong.org\/moodle\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/www.jinhong.org\/moodle\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/www.jinhong.org\/moodle\/theme\/yui_combo.php?m\/1623086421\/","combine":true,"comboBase":"https:\/\/www.jinhong.org\/moodle\/theme\/yui_combo.php?","ext":false,"root":"m\/1623086421\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emojipicker-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_h5p-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_html-codemirror":{"requires":["moodle-atto_html-codemirror-skin"]},"moodle-atto_html-beautify":{},"moodle-atto_html-button":{"requires":["promise","moodle-editor_atto-plugin","moodle-atto_html-beautify","moodle-atto_html-codemirror","event-valuechange"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/www.jinhong.org\/moodle\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/www.jinhong.org\/moodle\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1623086421\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/www.jinhong.org\/moodle\/lib\/javascript.php\/1623086421\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/www.jinhong.org\/moodle\/lib\/javascript.php\/1623086421\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdn.jsdelivr.net\/npm\/mathjax@2.7.8\/MathJax.js?delayStartupUntil=configured"},"core_question_flags":{"name":"core_question_flags","fullpath":"https:\/\/www.jinhong.org\/moodle\/lib\/javascript.php\/1623086421\/question\/flags.js","requires":["base","dom","event-delegate","io-base"]},"core_question_engine":{"name":"core_question_engine","fullpath":"https:\/\/www.jinhong.org\/moodle\/lib\/javascript.php\/1623086421\/question\/qengine.js","requires":["node","event"]},"mod_quiz":{"name":"mod_quiz","fullpath":"https:\/\/www.jinhong.org\/moodle\/lib\/javascript.php\/1623086421\/mod\/quiz\/module.js","requires":["base","dom","event-delegate","event-key","core_question_engine","moodle-core-formchangechecker"]}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+
+<style>
+
+.dashboard-card-deck .dashboard-card .dashboard-card-img 
+
+{
+
+-webkit-background-size: contain;
+
+background-size: contain;
+
+background-repeat: no-repeat;
+
+}
+
+</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="core/first" src="./Lab 02. Functions in Python (page 1 of 3)_files/requirejs.php"></script><style type="text/css" data-styled-components="" data-styled-components-is-local="true"></style><script type="text/x-mathjax-config">MathJax.Hub.Config({
+    config: ["Accessible.js", "Safe.js"],
+    errorSettings: { message: ["!"] },
+    skipStartupTypeset: true,
+    messageStyle: "none"
+});
+</script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery" src="./Lab 02. Functions in Python (page 1 of 3)_files/javascript(4).php"></script></head>
+<body id="page-mod-quiz-attempt" class="format-topics path-mod path-mod-quiz chrome dir-ltr lang-en yui-skin-sam yui3-skin-sam www-jinhong-org--moodle pagelayout-incourse course-18 context-24292 cmid-1142 category-2 drawer-open-left jsenabled" data-new-gr-c-s-check-loaded="14.1073.0" data-gr-ext-installed="">
+<div class="toast-wrapper mx-auto py-0 fixed-top" role="status" aria-live="polite"></div>
+
+<div id="page-wrapper" class="d-print-block">
+
+    <div>
+    <a class="sr-only sr-only-focusable" href="https://www.jinhong.org/moodle/mod/quiz/attempt.php?attempt=65402&amp;cmid=1142#maincontent">Skip to main content</a>
+</div><script src="./Lab 02. Functions in Python (page 1 of 3)_files/javascript(5).php"></script>
+<script src="./Lab 02. Functions in Python (page 1 of 3)_files/javascript(6).php"></script>
+<script src="./Lab 02. Functions in Python (page 1 of 3)_files/combo(4)"></script><script src="./Lab 02. Functions in Python (page 1 of 3)_files/javascript(7).php"></script>
+<script>
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+
+    <nav class="fixed-top navbar navbar-light bg-white navbar-expand moodle-has-zindex" aria-label="Site navigation">
+    
+            <div data-region="drawer-toggle" class="d-inline-block mr-3">
+                <button aria-expanded="true" aria-controls="nav-drawer" type="button" class="btn nav-link float-sm-left mr-1 btn-light bg-gray" data-action="toggle-drawer" data-side="left" data-preference="drawer-open-nav"><i class="icon fa fa-bars fa-fw " aria-hidden="true"></i><span class="sr-only">Side panel</span></button>
+            </div>
+    
+            <a href="https://www.jinhong.org/moodle" class="navbar-brand aabtn 
+                    d-none d-sm-inline
+                    ">
+                <span class="site-name d-none d-md-inline">UWA-CSSE</span>
+            </a>
+    
+            <ul class="navbar-nav d-none d-md-flex">
+                <!-- custom_menu -->
+                
+                <!-- page_heading_menu -->
+                
+            </ul>
+            <ul class="nav navbar-nav ml-auto">
+                <li class="d-none d-lg-block">
+                    
+                </li>
+                <!-- navbar_plugin_output -->
+                <li class="nav-item">
+                    <div class="popover-region collapsed popover-region-notifications" id="nav-notification-popover-container" data-userid="4059" data-region="popover-region">
+    <div class="popover-region-toggle nav-link" data-region="popover-region-toggle" role="button" aria-controls="popover-region-container-62f917649085f62f917648b5f55" aria-haspopup="true" aria-label="Show notification window with no new notifications" tabindex="0">
+                <i class="icon fa fa-bell fa-fw " title="Toggle notifications menu" aria-label="Toggle notifications menu"></i>
+        <div class="count-container hidden" data-region="count-container" aria-label="There are 0 unread notifications">0</div>
+
+    </div>
+    <div id="popover-region-container-62f917649085f62f917648b5f55" class="popover-region-container" data-region="popover-region-container" aria-expanded="false" aria-hidden="true" aria-label="Notification window" role="region">
+        <div class="popover-region-header-container">
+            <h3 class="popover-region-header-text" data-region="popover-region-header-text">Notifications</h3>
+            <div class="popover-region-header-actions" data-region="popover-region-header-actions">        <a class="mark-all-read-button" href="https://www.jinhong.org/moodle/mod/quiz/attempt.php?attempt=65402&amp;cmid=1142#" title="Mark all as read" data-action="mark-all-read" role="button" aria-label="Mark all as read">
+            <span class="normal-icon"><i class="icon fa fa-check fa-fw " aria-hidden="true"></i></span>
+            <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw " title="Loading" aria-label="Loading"></i></span>
+        </a>
+        <a href="https://www.jinhong.org/moodle/message/notificationpreferences.php?userid=4059" title="Notification preferences" aria-label="Notification preferences">
+            <i class="icon fa fa-cog fa-fw " aria-hidden="true"></i>
+        </a>
+</div>
+        </div>
+        <div class="popover-region-content-container" data-region="popover-region-content-container">
+            <div class="popover-region-content" data-region="popover-region-content">
+                        <div class="all-notifications" data-region="all-notifications" role="log" aria-busy="false" aria-atomic="false" aria-relevant="additions"></div>
+        <div class="empty-message" tabindex="0" data-region="empty-message">You have no notifications</div>
+
+            </div>
+            <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw " title="Loading" aria-label="Loading"></i></span>
+        </div>
+                <a class="see-all-link" href="https://www.jinhong.org/moodle/message/output/popup/notifications.php">
+                    <div class="popover-region-footer-container">
+                        <div class="popover-region-seeall-text">See all</div>
+                    </div>
+                </a>
+    </div>
+</div>
+                </li>
+                <!-- user_menu -->
+                <li class="nav-item d-flex align-items-center">
+                    <div class="usermenu"><div class="action-menu moodle-actionmenu nowrap-items d-inline" id="action-menu-1" data-enhance="moodle-core-actionmenu">
+
+        <div class="menubar d-flex " id="action-menu-1-menubar" role="menubar">
+
+            
+
+
+                <div class="action-menu-trigger">
+                    <div class="dropdown">
+                        <a href="https://www.jinhong.org/moodle/mod/quiz/attempt.php?attempt=65402&amp;cmid=1142#" tabindex="0" class="d-inline-block  dropdown-toggle icon-no-margin" id="action-menu-toggle-1" aria-label="User menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="action-menu-1-menu">
+                            
+                            <span class="userbutton"><span class="usertext mr-1">Zehua Zhu</span><span class="avatars"><span class="avatar current"><img src="./Lab 02. Functions in Python (page 1 of 3)_files/f2.png" class="userpicture defaultuserpic" width="35" height="35" aria-hidden="true"></span></span></span>
+                                
+                            <b class="caret"></b>
+                        </a>
+                            <div class="dropdown-menu dropdown-menu-right menu  align-tr-br" id="action-menu-1-menu" data-rel="menu-content" aria-labelledby="action-menu-toggle-1" role="menu" data-align="tr-br">
+                                        <a href="https://www.jinhong.org/moodle/my/" class="dropdown-item menu-action" role="menuitem" data-title="mymoodle,admin" aria-labelledby="actionmenuaction-1">
+                                                <i class="icon fa fa-tachometer fa-fw " aria-hidden="true"></i>
+                                            <span class="menu-action-text" id="actionmenuaction-1">
+                                                Dashboard
+                                            </span>
+                                        </a>
+                                        <div class="dropdown-divider" role="presentation"><span class="filler">&nbsp;</span></div>
+                                        <a href="https://www.jinhong.org/moodle/user/profile.php?id=4059" class="dropdown-item menu-action" role="menuitem" data-title="profile,moodle" aria-labelledby="actionmenuaction-2">
+                                                <i class="icon fa fa-user fa-fw " aria-hidden="true"></i>
+                                            <span class="menu-action-text" id="actionmenuaction-2">
+                                                Profile
+                                            </span>
+                                        </a>
+                                        <a href="https://www.jinhong.org/moodle/grade/report/overview/index.php" class="dropdown-item menu-action" role="menuitem" data-title="grades,grades" aria-labelledby="actionmenuaction-3">
+                                                <i class="icon fa fa-table fa-fw " aria-hidden="true"></i>
+                                            <span class="menu-action-text" id="actionmenuaction-3">
+                                                Grades
+                                            </span>
+                                        </a>
+                                        <a href="https://www.jinhong.org/moodle/message/index.php" class="dropdown-item menu-action" role="menuitem" data-title="messages,message" aria-labelledby="actionmenuaction-4">
+                                                <i class="icon fa fa-comment fa-fw " aria-hidden="true"></i>
+                                            <span class="menu-action-text" id="actionmenuaction-4">
+                                                Messages
+                                            </span>
+                                        </a>
+                                        <a href="https://www.jinhong.org/moodle/user/preferences.php" class="dropdown-item menu-action" role="menuitem" data-title="preferences,moodle" aria-labelledby="actionmenuaction-5">
+                                                <i class="icon fa fa-wrench fa-fw " aria-hidden="true"></i>
+                                            <span class="menu-action-text" id="actionmenuaction-5">
+                                                Preferences
+                                            </span>
+                                        </a>
+                                        <div class="dropdown-divider" role="presentation"><span class="filler">&nbsp;</span></div>
+                                        <a href="https://www.jinhong.org/moodle/login/logout.php?sesskey=LZxOoGa69P" class="dropdown-item menu-action" role="menuitem" data-title="logout,moodle" aria-labelledby="actionmenuaction-6">
+                                                <i class="icon fa fa-sign-out fa-fw " aria-hidden="true"></i>
+                                            <span class="menu-action-text" id="actionmenuaction-6">
+                                                Log out
+                                            </span>
+                                        </a>
+                            </div>
+                    </div>
+                </div>
+
+        </div>
+
+</div></div>
+                </li>
+            </ul>
+            <!-- search_box -->
+    </nav>
+    
+    <div id="nav-drawer" data-region="drawer" class="d-print-none moodle-has-zindex " aria-hidden="false" tabindex="-1">
+        <nav class="list-group" aria-label="CITS1401 2022S2">
+            <ul>
+                    <li>
+                        <a class="list-group-item list-group-item-action  " href="https://www.jinhong.org/moodle/course/view.php?id=18" data-key="coursehome" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="60" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0">
+                            <div class="ml-0">
+                                <div class="media">
+                                        <span class="media-left">
+                                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"></i>
+                                        </span>
+                                    <span class="media-body ">CITS1401 2022S2</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="list-group-item list-group-item-action  " href="https://www.jinhong.org/moodle/user/index.php?id=18" data-key="participants" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="90" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="18">
+                            <div class="ml-0">
+                                <div class="media">
+                                        <span class="media-left">
+                                            <i class="icon fa fa-users fa-fw " aria-hidden="true"></i>
+                                        </span>
+                                    <span class="media-body ">Participants</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="list-group-item list-group-item-action  " href="https://www.jinhong.org/moodle/grade/report/index.php?id=18" data-key="grades" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="70" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="18">
+                            <div class="ml-0">
+                                <div class="media">
+                                        <span class="media-left">
+                                            <i class="icon fa fa-table fa-fw " aria-hidden="true"></i>
+                                        </span>
+                                    <span class="media-body ">Grades</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="list-group-item list-group-item-action  " href="https://www.jinhong.org/moodle/course/view.php?id=18#section-0" data-key="97" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="18">
+                            <div class="ml-0">
+                                <div class="media">
+                                        <span class="media-left">
+                                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"></i>
+                                        </span>
+                                    <span class="media-body ">General</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="list-group-item list-group-item-action active " href="https://www.jinhong.org/moodle/course/view.php?id=18#section-1" data-key="98" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="1" data-isactive="1" data-hidden="0" data-preceedwithhr="0" data-parent-key="18">
+                            <div class="ml-0">
+                                <div class="media">
+                                        <span class="media-left">
+                                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"></i>
+                                        </span>
+                                    <span class="media-body font-weight-bold">Labs</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    </ul>
+                    </nav>
+                    <nav class="list-group mt-1" aria-label="Site">
+                    <ul>
+                    <li>
+                        <a class="list-group-item list-group-item-action  " href="https://www.jinhong.org/moodle/" data-key="home" data-isexpandable="0" data-indent="0" data-showdivider="1" data-type="1" data-nodetype="1" data-collapse="0" data-forceopen="1" data-isactive="0" data-hidden="0" data-preceedwithhr="0">
+                            <div class="ml-0">
+                                <div class="media">
+                                        <span class="media-left">
+                                            <i class="icon fa fa-home fa-fw " aria-hidden="true"></i>
+                                        </span>
+                                    <span class="media-body ">Home</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="list-group-item list-group-item-action  " href="https://www.jinhong.org/moodle/my/" data-key="myhome" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="70" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="home">
+                            <div class="ml-0">
+                                <div class="media">
+                                        <span class="media-left">
+                                            <i class="icon fa fa-tachometer fa-fw " aria-hidden="true"></i>
+                                        </span>
+                                    <span class="media-body ">Dashboard</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="list-group-item list-group-item-action  " href="https://www.jinhong.org/moodle/calendar/view.php?view=month&amp;course=18" data-key="calendar" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="60" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="1">
+                            <div class="ml-0">
+                                <div class="media">
+                                        <span class="media-left">
+                                            <i class="icon fa fa-calendar fa-fw " aria-hidden="true"></i>
+                                        </span>
+                                    <span class="media-body ">Calendar</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="list-group-item list-group-item-action  " href="https://www.jinhong.org/moodle/user/files.php" data-key="privatefiles" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="70" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="1">
+                            <div class="ml-0">
+                                <div class="media">
+                                        <span class="media-left">
+                                            <i class="icon fa fa-file-o fa-fw " aria-hidden="true"></i>
+                                        </span>
+                                    <span class="media-body ">Private files</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="list-group-item " data-key="mycourses" data-isexpandable="1" data-indent="0" data-showdivider="0" data-type="0" data-nodetype="1" data-collapse="0" data-forceopen="1" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="home">
+                            <div class="ml-0">
+                                <div class="media">
+                                        <span class="media-left">
+                                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"></i>
+                                        </span>
+                                    <span class="media-body">My courses</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="list-group-item list-group-item-action  " href="https://www.jinhong.org/moodle/course/view.php?id=18" data-key="18" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="1" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+                            <div class="ml-1">
+                                <div class="media">
+                                        <span class="media-left">
+                                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"></i>
+                                        </span>
+                                    <span class="media-body ">CITS1401 2022S2</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="page" class="container-fluid d-print-block">
+        <header id="page-header" class="row">
+    <div class="col-12 pt-3 pb-3">
+        <div class="card ">
+            <div class="card-body ">
+                <div class="d-sm-flex align-items-center">
+                    <div class="mr-auto">
+                        <div class="page-context-header"><div class="page-header-headings"><h1>CITS1401 Computational Thinking with Python (2022S2)</h1></div></div>
+                    </div>
+
+                    <div class="header-actions-container flex-shrink-0" data-region="header-actions-container">
+                    </div>
+                </div>
+                <div class="d-flex flex-wrap">
+                    <div id="page-navbar">
+                        <nav aria-label="Navigation bar">
+    <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="https://www.jinhong.org/moodle/">Home</a>
+                </li>
+        
+                <li class="breadcrumb-item">My courses</li>
+        
+                <li class="breadcrumb-item">
+                    <a href="https://www.jinhong.org/moodle/course/view.php?id=18" title="CITS1401 Computational Thinking with Python (2022S2)">CITS1401 2022S2</a>
+                </li>
+        
+                <li class="breadcrumb-item">
+                    <a href="https://www.jinhong.org/moodle/course/view.php?id=18#section-1">Labs</a>
+                </li>
+        
+                <li class="breadcrumb-item">
+                    <a href="https://www.jinhong.org/moodle/mod/quiz/view.php?id=1142" aria-current="page" title="Quiz">Lab 02. Functions in Python</a>
+                </li>
+        </ol>
+</nav>
+                    </div>
+                    <div class="ml-auto d-flex">
+                        
+                    </div>
+                    <div id="course-header">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <div id="page-content" class="row pb-3 d-print-block">
+            <div id="region-main-box" class="col-12">
+                <section id="region-main" class="has-blocks mb-3" aria-label="Content">
+
+                    <span class="notifications" id="user-notifications"></span>
+                    <div role="main" id="yui_3_17_2_1_1660491623786_191"><span id="maincontent"></span><form action="https://www.jinhong.org/moodle/mod/quiz/processattempt.php?cmid=1142" method="post" enctype="multipart/form-data" accept-charset="utf-8" id="responseform" autocomplete="off"><div id="yui_3_17_2_1_1660491623786_190"><div id="question-66627-1" class="que description informationitem answersaved"><div class="info"><h3 class="no">Information</h3><div class="state"></div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1660491623786_110"><input type="hidden" name="q66627:1_:flagged" value="0" id="yui_3_17_2_1_1660491623786_27"><input type="hidden" value="qaid=980843&amp;qubaid=66627&amp;qid=70362&amp;slot=1&amp;checksum=c55a19770c2bfb0d0639961ebf46e47e&amp;sesskey=LZxOoGa69P&amp;newstate=" class="questionflagpostdata" id="yui_3_17_2_1_1660491623786_28">
+<input type="hidden" class="questionflagvalue" id="q66627:1_:flaggedcheckbox" name="q66627:1_:flagged" value="0"><input type="image" class="questionflagimage" src="./Lab 02. Functions in Python (page 1 of 3)_files/unflagged.svg" title="Flag this question for future reference" alt="Not flagged"><span class="questionflagtext" title="Flag this question for future reference">Flag question</span></div></div><div class="content" id="yui_3_17_2_1_1660491623786_189"><div class="formulation clearfix" id="yui_3_17_2_1_1660491623786_188"><h4 class="accesshide">Information text</h4><input type="hidden" name="q66627:1_:sequencecheck" value="2" id="yui_3_17_2_1_1660491623786_29"><div class="qtext" id="yui_3_17_2_1_1660491623786_187"><h2>Functions</h2>
+<p id="yui_3_17_2_1_1660491623786_186"><span style="font-size: 0.9375rem;" id="yui_3_17_2_1_1660491623786_185">The process of decomposing a larger problem into a set of smaller ones, each of which may be decomposed into even smaller ones, and so on, is a key part of human problem solving. It's at the heart of computational thinking (programming) too, which after all is just a form of problem solving. In programming, the solutions for solving the subproblems are called </span><em style="font-size: 0.9375rem;">functions.&nbsp;</em><span style="font-size: 0.9375rem;">(Revise the function usage and defining functions in Lectures</span><span style="font-size: 0.9375rem;">)</span><em style="font-size: 0.9375rem;">.&nbsp;</em><br></p>
+<p>To learn a bit about how functions work in Python, type each of the inputs on the left hand side of the table below into the Python shell, observing what happens and reading the notes. Note that some of the table cells in the left column involve typing multiple lines.</p>
+<table class="table" border="0">
+<tbody>
+<tr>
+<td style="width: 500px;"><strong>Input Line</strong></td>
+<td>
+<p><strong>Notes</strong></p>
+</td>
+</tr>
+<tr>
+<td style="width: 400px;">
+<pre>def square(num):
+    """Returns a given number squared"""
+    return num * num
+</pre>
+</td>
+<td>
+<p>After you enter the first line, Python will respond with cursor blinking at next line at a tab space indentation. Subsequent lines within the function (called the body of the function) must be indented, usually with the Tab key. The purpose of the prompt is to indicate that Python knows you haven't finished and it's expecting more input, which in this case will be an indented block. After typing the third line you'll hit Enter key twice to complete the entry of this def statement.&nbsp;</p><p>The first line defines the function's name ("square" in this example) and any pieces of data the function requires to operate which are called <i>parameters</i>&nbsp;(in this example, there is one parameter called <code>num</code>). The names of functions should obey similar naming conventions as variable names so they can be easily read.</p><p>The second line is a docstring, a line of text that describes the point of the function that starts and ends with """ (three sets of double quotes). This is important part of the good style of coding. The details are discussed in the lectures.</p><p>The third line says that the function <i>returns</i>&nbsp;the value of the parameter multiplied by itself, i.e. "squared". This is the output of the function.&nbsp;</p><p>This block of code defines the function but does not execute (run) it. We will execute the function by calling it by its name as discussed below.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 400px;">
+<pre>square(3)</pre>
+</td>
+<td>
+<p>Square is a function (defined above) that for any given num, returns the value num<sup>2</sup>. num is called a parameter to the function. The value given to the parameter, 3 in this case, is called the <i>argument</i>.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 400px;">
+<pre>square(3.0)
+</pre>
+</td>
+<td>
+<p>The type returned by square is the same as the type of the argument: float in this case, integer (or just int) in the previous case.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 400px;">
+<pre>def gonk(x):
+    """A mystery function"""
+    return x * x
+</pre>
+</td>
+<td>
+<p>What do you think this does?</p>
+</td>
+</tr>
+<tr>
+<td style="width: 400px;">
+<pre>gonk(5)</pre>
+</td>
+<td>
+<p>The functions square and gonk are identical in effect, but the choice of name makes the second almost meaningless to the reader.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 400px;">
+<pre>def to_celsius(temp_f):
+    """Converts a given fahrenheit temperature to celsius"""
+    return (temp_f - 32) * 5 / 9
+</pre>
+</td>
+<td>
+<p>You should be able to figure out what this function will do ...</p>
+</td>
+</tr>
+<tr>
+<td style="width: 400px;">
+<pre>to_celsius(212)
+</pre>
+</td>
+<td>
+<p>... and predict the values of these two expressions ...</p>
+</td>
+</tr>
+<tr>
+<td style="width: 400px;">
+<pre>to_celsius(32)</pre>
+</td>
+<td>
+<p>... before you even type them.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 400px;">
+<pre>def celsius(temp_f):
+    """Converts a given fahrenheit temperature to celsius"""
+    freezing = 32
+    factor = 5 / 9
+    ans = (temp_f - freezing) * factor
+    return ans
+</pre>
+</td>
+<td>
+<p>Here's a longer version of an equivalent function using local variables (variables belonging just to the function) and a multiline function body. Note that all lines of the function body must be indented by the same amount.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 400px;">
+<pre>celsius(212)
+celsius(32)
+</pre>
+</td>
+<td>
+<p>Just to prove this one behaves like the last one.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 400px;">
+<pre>abs(-9)
+</pre>
+</td>
+<td>
+<p>Python has lots of built-in functions. Can you work out what this one does?</p>
+</td>
+</tr>
+<tr>
+<td style="width: 400px;">
+<pre>round(3.8)
+round(3.5)
+round(3.3)
+</pre>
+</td>
+<td>
+<p>
+And this one?
+</p>
+</td>
+</tr>
+<tr>
+<td style="width: 400px;">
+<pre>int(3.8)
+int(3.5)
+int(3.3)
+</pre>
+</td>
+<td>
+<p>And this?</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h4><br></h4></div></div></div></div><div id="question-66627-2" class="que multianswer adaptive notyetanswered"><div class="info"><h3 class="no">Question <span class="qno">1</span></h3><div class="state">Not complete</div><div class="grade">Marked out of 3.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1660491623786_118"><input type="hidden" name="q66627:2_:flagged" value="0" id="yui_3_17_2_1_1660491623786_30"><input type="hidden" value="qaid=980844&amp;qubaid=66627&amp;qid=70372&amp;slot=2&amp;checksum=8e186880bdfd64ef4170d50129663434&amp;sesskey=LZxOoGa69P&amp;newstate=" class="questionflagpostdata" id="yui_3_17_2_1_1660491623786_31">
+<input type="hidden" class="questionflagvalue" id="q66627:2_:flaggedcheckbox" name="q66627:2_:flagged" value="0"><input type="image" class="questionflagimage" src="./Lab 02. Functions in Python (page 1 of 3)_files/unflagged.svg" title="Flag this question for future reference" alt="Not flagged"><span class="questionflagtext" title="Flag this question for future reference">Flag question</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q66627:2_:sequencecheck" value="1" id="yui_3_17_2_1_1660491623786_32"><p>Fill in the blanks in the following.<br> <br>The Python code below defines a function named <span class="subquestion form-inline d-inline" id="yui_3_17_2_1_1660491623786_170"><label class="subq accesshide" for="q66627:2_sub1_answer">Answer</label><input type="text" name="q66627:2_sub1_answer" id="q66627:2_sub1_answer" size="19" class="form-control mb-1"></span> that has two parameters, the first being <span class="subquestion form-inline d-inline" id="yui_3_17_2_1_1660491623786_172"><label class="subq accesshide" for="q66627:2_sub2_answer">Answer</label><input type="text" name="q66627:2_sub2_answer" id="q66627:2_sub2_answer" size="9" class="form-control mb-1"></span> and the second being <span class="subquestion form-inline d-inline" id="yui_3_17_2_1_1660491623786_174"><label class="subq accesshide" for="q66627:2_sub3_answer">Answer</label><input type="text" name="q66627:2_sub3_answer" id="q66627:2_sub3_answer" size="5" class="form-control mb-1"></span>. If the function is "called" via the expression&nbsp;<span style="font-size: 14px; font-family: &#39;courier new&#39;, courier, monospace;">distance_travelled(10, 50)</span>, the value of the arguments are <span class="subquestion form-inline d-inline" id="yui_3_17_2_1_1660491623786_176"><label class="subq accesshide" for="q66627:2_sub4_answer">Answer</label><input type="text" name="q66627:2_sub4_answer" id="q66627:2_sub4_answer" size="2" class="form-control mb-1"></span> and&nbsp;<span class="subquestion form-inline d-inline" id="yui_3_17_2_1_1660491623786_178"><label class="subq accesshide" for="q66627:2_sub5_answer">Answer</label><input type="text" name="q66627:2_sub5_answer" id="q66627:2_sub5_answer" size="2" class="form-control mb-1"></span> respectively, and the numeric value returned by the function will be <span class="subquestion form-inline d-inline" id="yui_3_17_2_1_1660491623786_180"><label class="subq accesshide" for="q66627:2_sub6_answer">Answer</label><input type="text" name="q66627:2_sub6_answer" id="q66627:2_sub6_answer" size="3" class="form-control mb-1"></span>.</p>
+<pre>def distance_travelled(duration, speed):
+    """Returns the distance travelled given duration and the speed"""
+    return speed * duration
+</pre><div class="im-controls"><input type="submit" id="q66627:2_-submit" name="q66627:2_-submit" value="Check" class="submit btn btn-secondary"></div></div></div></div><div id="question-66627-3" class="que multichoice adaptive notyetanswered"><div class="info"><h3 class="no">Question <span class="qno">2</span></h3><div class="state">Not complete</div><div class="grade">Marked out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1660491623786_126"><input type="hidden" name="q66627:3_:flagged" value="0" id="yui_3_17_2_1_1660491623786_33"><input type="hidden" value="qaid=980845&amp;qubaid=66627&amp;qid=70391&amp;slot=3&amp;checksum=1ab154e043433ca6fe63e55b6dd8f024&amp;sesskey=LZxOoGa69P&amp;newstate=" class="questionflagpostdata" id="yui_3_17_2_1_1660491623786_34">
+<input type="hidden" class="questionflagvalue" id="q66627:3_:flaggedcheckbox" name="q66627:3_:flagged" value="0"><input type="image" class="questionflagimage" src="./Lab 02. Functions in Python (page 1 of 3)_files/unflagged.svg" title="Flag this question for future reference" alt="Not flagged"><span class="questionflagtext" title="Flag this question for future reference">Flag question</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q66627:3_:sequencecheck" value="1" id="yui_3_17_2_1_1660491623786_35"><div class="qtext"><p>Functions should also have clear and concise naming, so that users (such as yourself and your colleagues) will be able to understand what it does without having to go over the function in detail. Of course, they should also be syntactically correct. Select <b>ALL </b>functions names that are syntactically correct AND are of good style (i.e. readability).</p></div><div class="ablock"><div class="prompt">Select one or more:</div><div class="answer"><div class="r0"><input type="hidden" name="q66627:3_choice0" value="0" id="yui_3_17_2_1_1660491623786_36"><input type="checkbox" name="q66627:3_choice0" value="1" id="q66627:3_choice0"><label for="q66627:3_choice0" class="d-flex w-100"><span class="answernumber"></span><div class="flex-fill ml-1"><p>find_largest_value()</p></div></label> </div>
+<div class="r1"><input type="hidden" name="q66627:3_choice1" value="0" id="yui_3_17_2_1_1660491623786_37"><input type="checkbox" name="q66627:3_choice1" value="1" id="q66627:3_choice1"><label for="q66627:3_choice1" class="d-flex w-100"><span class="answernumber"></span><div class="flex-fill ml-1"><p>function()</p></div></label> </div>
+<div class="r0"><input type="hidden" name="q66627:3_choice2" value="0" id="yui_3_17_2_1_1660491623786_38"><input type="checkbox" name="q66627:3_choice2" value="1" id="q66627:3_choice2"><label for="q66627:3_choice2" class="d-flex w-100"><span class="answernumber"></span><div class="flex-fill ml-1"><p>a_t_z_cal()</p></div></label> </div>
+<div class="r1"><input type="hidden" name="q66627:3_choice3" value="0" id="yui_3_17_2_1_1660491623786_39"><input type="checkbox" name="q66627:3_choice3" value="1" id="q66627:3_choice3"><label for="q66627:3_choice3" class="d-flex w-100"><span class="answernumber"></span><div class="flex-fill ml-1">evaluate_triangle_area()</div></label> </div>
+<div class="r0"><input type="hidden" name="q66627:3_choice4" value="0" id="yui_3_17_2_1_1660491623786_40"><input type="checkbox" name="q66627:3_choice4" value="1" id="q66627:3_choice4"><label for="q66627:3_choice4" class="d-flex w-100"><span class="answernumber"></span><div class="flex-fill ml-1"><p>convert_currency[]</p></div></label> </div>
+<div class="r1"><input type="hidden" name="q66627:3_choice5" value="0" id="yui_3_17_2_1_1660491623786_41"><input type="checkbox" name="q66627:3_choice5" value="1" id="q66627:3_choice5"><label for="q66627:3_choice5" class="d-flex w-100"><span class="answernumber"></span><div class="flex-fill ml-1"><p>remove_white_spaces()</p></div></label> </div>
+<div class="r0"><input type="hidden" name="q66627:3_choice6" value="0" id="yui_3_17_2_1_1660491623786_42"><input type="checkbox" name="q66627:3_choice6" value="1" id="q66627:3_choice6"><label for="q66627:3_choice6" class="d-flex w-100"><span class="answernumber"></span><div class="flex-fill ml-1"><p>find minimum()</p></div></label> </div>
+</div></div><div class="im-controls"><input type="submit" id="q66627:3_-submit" name="q66627:3_-submit" value="Check" class="submit btn btn-secondary"></div></div></div></div><div class="submitbtns"><input type="submit" name="next" value="Next page" class="mod_quiz-next-nav btn btn-primary" id="yui_3_17_2_1_1660491623786_43"></div><input type="hidden" name="attempt" value="65402" id="yui_3_17_2_1_1660491623786_44"><input type="hidden" name="thispage" value="0" id="followingpage"><input type="hidden" name="nextpage" value="1" id="yui_3_17_2_1_1660491623786_45"><input type="hidden" name="timeup" value="0" id="timeup"><input type="hidden" name="sesskey" value="LZxOoGa69P" id="yui_3_17_2_1_1660491623786_46"><input type="hidden" name="scrollpos" value="" id="scrollpos"><input type="hidden" name="slots" value="1,2,3" id="yui_3_17_2_1_1660491623786_47"></div></form><div id="connection-error" style="display: none;" role="alert"><p>Network connection lost. (Autosave failed).</p>
+
+<p>Make a note of any responses entered on this page in the last few minutes, then try to re-connect.</p>
+
+<p>Once connection has been re-established, your responses should be saved and this message will disappear.</p>
+</div><div id="connection-ok" style="display: none;" role="alert"><p>Network connection restored. You may continue safely.</p>
+</div></div>
+                    <div class="mt-5 mb-1 activity-navigation container-fluid">
+<div class="row">
+    <div class="col-md-4">        <div class="float-left">
+                <a href="https://www.jinhong.org/moodle/mod/quiz/view.php?id=1141&amp;forceview=1" id="prev-activity-link" class="btn btn-link" title="Lab 01. Python basics (for late submission or approved special considerations)">◄ Lab 01. Python basics (for late submission or approved special considerations)</a>
+
+        </div>
+</div>
+    <div class="col-md-4">        <div class="mdl-align">
+            <div class="urlselect">
+    <form method="post" action="https://www.jinhong.org/moodle/course/jumpto.php" class="form-inline" id="url_select_f62f917648b5f514">
+        <input type="hidden" name="sesskey" value="LZxOoGa69P">
+            <label for="jump-to-activity" class="sr-only">
+                Jump to...
+            </label>
+        <select id="jump-to-activity" class="custom-select urlselect" name="jump">
+                    <option value="" selected="">Jump to...</option>
+                    <option value="/mod/forum/view.php?id=1136&amp;forceview=1">General Discussion / Help forum</option>
+                    <option value="/mod/forum/view.php?id=1346&amp;forceview=1">Announcements</option>
+                    <option value="/mod/quiz/view.php?id=1139&amp;forceview=1">Lab 00. Introduction</option>
+                    <option value="/mod/quiz/view.php?id=1140&amp;forceview=1">Lab 01. Python basics</option>
+                    <option value="/mod/quiz/view.php?id=1141&amp;forceview=1">Lab 01. Python basics (for late submission or approved special considerations)</option>
+                    <option value="/mod/quiz/view.php?id=1143&amp;forceview=1">Lab 02. Functions in Python (for late submission or approved special considerations)</option>
+                    <option value="/mod/quiz/view.php?id=1144&amp;forceview=1">Lab 03. Conditions and simple loops</option>
+                    <option value="/mod/quiz/view.php?id=1145&amp;forceview=1">Lab 03. Conditions and simple loops (for late submission or approved special considerations)</option>
+                    <option value="/mod/quiz/view.php?id=1146&amp;forceview=1">Lab 04. Strings and Lists</option>
+                    <option value="/mod/quiz/view.php?id=1147&amp;forceview=1">Lab 04. Strings and Lists (for late submission or approved special considerations)</option>
+                    <option value="/mod/quiz/view.php?id=1148&amp;forceview=1">Lab 05. Dictionaries</option>
+                    <option value="/mod/quiz/view.php?id=1149&amp;forceview=1">Lab 05. Dictionaries (for late submission or approved special considerations)</option>
+        </select>
+            <noscript>
+                <input type="submit" class="btn btn-secondary ml-1" value="Go">
+            </noscript>
+    </form>
+</div>
+
+        </div>
+</div>
+    <div class="col-md-4">        <div class="float-right">
+                <a href="https://www.jinhong.org/moodle/mod/quiz/view.php?id=1143&amp;forceview=1" id="next-activity-link" class="btn btn-link" title="Lab 02. Functions in Python (for late submission or approved special considerations)">Lab 02. Functions in Python (for late submission or approved special considerations) ►</a>
+
+        </div>
+</div>
+</div>
+</div>
+                    
+
+                </section>
+                <section data-region="blocks-column" class="d-print-none" aria-label="Blocks">
+                    <aside id="block-region-side-pre" class="block-region" data-blockregion="side-pre" data-droptarget="1"><a href="https://www.jinhong.org/moodle/mod/quiz/attempt.php?attempt=65402&amp;cmid=1142#sb-1" class="sr-only sr-only-focusable">Skip &lt;span id="mod_quiz_navblock_title"&gt;Quiz navigation&lt;/span&gt;</a>
+
+<section id="mod_quiz_navblock" class=" block block_fake  card mb-3" role="navigation" data-block="_fake" aria-labelledby="instance-fakeid-62f917648bb7e-header">
+
+    <div class="card-body p-3">
+
+            <h5 id="instance-fakeid-62f917648bb7e-header" class="card-title d-inline"><span id="mod_quiz_navblock_title">Quiz navigation</span></h5>
+
+
+        <div class="card-text content mt-3">
+            <div class="qn_buttons clearfix multipages"><a class="qnbutton answersaved free btn btn-secondary thispage" id="quiznavbutton1" title="Viewed" data-quiz-page="0" href="https://www.jinhong.org/moodle/mod/quiz/attempt.php?attempt=65402&amp;cmid=1142#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Information </span>i<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton notyetanswered free btn btn-secondary thispage" id="quiznavbutton2" title="Not complete" data-quiz-page="0" href="https://www.jinhong.org/moodle/mod/quiz/attempt.php?attempt=65402&amp;cmid=1142#question-66627-2"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>1<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton notyetanswered free btn btn-secondary thispage" id="quiznavbutton3" title="Not complete" data-quiz-page="0" href="https://www.jinhong.org/moodle/mod/quiz/attempt.php?attempt=65402&amp;cmid=1142#question-66627-3"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>2<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton notyetanswered free btn btn-secondary" id="quiznavbutton4" title="Not complete" data-quiz-page="1" href="https://www.jinhong.org/moodle/mod/quiz/attempt.php?attempt=65402&amp;cmid=1142&amp;page=1#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>3<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton notyetanswered free btn btn-secondary" id="quiznavbutton5" title="Not complete" data-quiz-page="1" href="https://www.jinhong.org/moodle/mod/quiz/attempt.php?attempt=65402&amp;cmid=1142&amp;page=1#question-66627-5"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>4<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton notyetanswered free btn btn-secondary" id="quiznavbutton6" title="Not complete" data-quiz-page="1" href="https://www.jinhong.org/moodle/mod/quiz/attempt.php?attempt=65402&amp;cmid=1142&amp;page=1#question-66627-6"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>5<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton notyetanswered free btn btn-secondary" id="quiznavbutton7" title="Not complete" data-quiz-page="1" href="https://www.jinhong.org/moodle/mod/quiz/attempt.php?attempt=65402&amp;cmid=1142&amp;page=1#question-66627-7"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>6<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton notyetanswered free btn btn-secondary" id="quiznavbutton8" title="Not complete" data-quiz-page="2" href="https://www.jinhong.org/moodle/mod/quiz/attempt.php?attempt=65402&amp;cmid=1142&amp;page=2#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>7<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton notyetanswered free btn btn-secondary" id="quiznavbutton9" title="Not complete" data-quiz-page="2" href="https://www.jinhong.org/moodle/mod/quiz/attempt.php?attempt=65402&amp;cmid=1142&amp;page=2#question-66627-9"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>8<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton notyetanswered free btn btn-secondary" id="quiznavbutton10" title="Not complete" data-quiz-page="2" href="https://www.jinhong.org/moodle/mod/quiz/attempt.php?attempt=65402&amp;cmid=1142&amp;page=2#question-66627-10"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>9<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton notyetanswered free btn btn-secondary" id="quiznavbutton11" title="Not complete" data-quiz-page="2" href="https://www.jinhong.org/moodle/mod/quiz/attempt.php?attempt=65402&amp;cmid=1142&amp;page=2#question-66627-11"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>10<span class="accesshide"> <span class="flagstate"></span></span></a></div><div class="othernav"><a class="endtestlink aalink" href="https://www.jinhong.org/moodle/mod/quiz/summary.php?attempt=65402&amp;cmid=1142">Finish attempt ...</a><div id="quiz-timer" role="timer" aria-atomic="true" aria-relevant="text">Time left <span id="quiz-time-left"></span></div></div>
+            <div class="footer"></div>
+            
+        </div>
+
+    </div>
+
+</section>
+
+  <span id="sb-1"></span></aside>
+                </section>
+            </div>
+        </div>
+    </div>
+    
+    <div id="goto-top-link">
+        <a class="btn btn-light" role="button" href="https://www.jinhong.org/moodle/mod/quiz/attempt.php?attempt=65402&amp;cmid=1142#">
+            <i class="icon fa fa-arrow-up fa-fw " title="Go to top" aria-label="Go to top"></i>
+        </a>
+    </div>
+    <footer id="page-footer" class="py-3 bg-dark text-light">
+        <div class="container">
+            <div id="course-footer"></div>
+    
+    
+            <div class="logininfo">You are logged in as <a href="https://www.jinhong.org/moodle/user/profile.php?id=4059" title="View profile">Zehua Zhu</a> (<a href="https://www.jinhong.org/moodle/login/logout.php?sesskey=LZxOoGa69P">Log out</a>)</div>
+            <div class="tool_usertours-resettourcontainer"></div>
+            <div class="homelink"><a href="https://www.jinhong.org/moodle/course/view.php?id=18">CITS1401 2022S2</a></div>
+            <nav class="nav navbar-nav d-md-none" aria-label="Custom menu">
+                    <ul class="list-unstyled pt-3">
+                    </ul>
+            </nav>
+            <div class="tool_dataprivacy"><a href="https://www.jinhong.org/moodle/admin/tool/dataprivacy/summary.php">Data retention summary</a></div><a href="https://download.moodle.org/mobile?version=2020061500.04&amp;lang=en&amp;iosappid=633359593&amp;androidappid=com.moodle.moodlemobile">Get the mobile app</a>
+            <script>
+//<![CDATA[
+var require = {
+    baseUrl : 'https://www.jinhong.org/moodle/lib/requirejs.php/1623086421/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'https://www.jinhong.org/moodle/lib/javascript.php/1623086421/lib/jquery/jquery-3.4.1.min',
+        jqueryui: 'https://www.jinhong.org/moodle/lib/javascript.php/1623086421/lib/jquery/ui-1.12.1/jquery-ui.min',
+        jqueryprivate: 'https://www.jinhong.org/moodle/lib/javascript.php/1623086421/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+      // Stub module for 'process'. This is a workaround for a bug in MathJax (see MDL-60458).
+      '*': { process: 'core/first' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script src="./Lab 02. Functions in Python (page 1 of 3)_files/javascript(8).php"></script>
+<script>
+//<![CDATA[
+M.util.js_pending("core/first");require(['core/first'], function() {
+require(['core/prefetch']);
+;
+require(["media_videojs/loader"], function(loader) {
+    loader.setUp(function(videojs) {
+        videojs.options.flash.swf = "https://www.jinhong.org/moodle/media/player/videojs/videojs/video-js.swf";
+videojs.addLanguage('en', {
+  "Audio Player": "Audio Player",
+  "Video Player": "Video Player",
+  "Play": "Play",
+  "Pause": "Pause",
+  "Replay": "Replay",
+  "Current Time": "Current Time",
+  "Duration": "Duration",
+  "Remaining Time": "Remaining Time",
+  "Stream Type": "Stream Type",
+  "LIVE": "LIVE",
+  "Seek to live, currently behind live": "Seek to live, currently behind live",
+  "Seek to live, currently playing live": "Seek to live, currently playing live",
+  "Loaded": "Loaded",
+  "Progress": "Progress",
+  "Progress Bar": "Progress Bar",
+  "progress bar timing: currentTime={1} duration={2}": "{1} of {2}",
+  "Fullscreen": "Fullscreen",
+  "Non-Fullscreen": "Non-Fullscreen",
+  "Mute": "Mute",
+  "Unmute": "Unmute",
+  "Playback Rate": "Playback Rate",
+  "Subtitles": "Subtitles",
+  "subtitles off": "subtitles off",
+  "Captions": "Captions",
+  "captions off": "captions off",
+  "Chapters": "Chapters",
+  "Descriptions": "Descriptions",
+  "descriptions off": "descriptions off",
+  "Audio Track": "Audio Track",
+  "Volume Level": "Volume Level",
+  "You aborted the media playback": "You aborted the media playback",
+  "A network error caused the media download to fail part-way.": "A network error caused the media download to fail part-way.",
+  "The media could not be loaded, either because the server or network failed or because the format is not supported.": "The media could not be loaded, either because the server or network failed or because the format is not supported.",
+  "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.": "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.",
+  "No compatible source was found for this media.": "No compatible source was found for this media.",
+  "The media is encrypted and we do not have the keys to decrypt it.": "The media is encrypted and we do not have the keys to decrypt it.",
+  "Play Video": "Play Video",
+  "Close": "Close",
+  "Close Modal Dialog": "Close Modal Dialog",
+  "Modal Window": "Modal Window",
+  "This is a modal window": "This is a modal window",
+  "This modal can be closed by pressing the Escape key or activating the close button.": "This modal can be closed by pressing the Escape key or activating the close button.",
+  ", opens captions settings dialog": ", opens captions settings dialog",
+  ", opens subtitles settings dialog": ", opens subtitles settings dialog",
+  ", opens descriptions settings dialog": ", opens descriptions settings dialog",
+  ", selected": ", selected",
+  "captions settings": "captions settings",
+  "subtitles settings": "subtitles settings",
+  "descriptions settings": "descriptions settings",
+  "Text": "Text",
+  "White": "White",
+  "Black": "Black",
+  "Red": "Red",
+  "Green": "Green",
+  "Blue": "Blue",
+  "Yellow": "Yellow",
+  "Magenta": "Magenta",
+  "Cyan": "Cyan",
+  "Background": "Background",
+  "Window": "Window",
+  "Transparent": "Transparent",
+  "Semi-Transparent": "Semi-Transparent",
+  "Opaque": "Opaque",
+  "Font Size": "Font Size",
+  "Text Edge Style": "Text Edge Style",
+  "None": "None",
+  "Raised": "Raised",
+  "Depressed": "Depressed",
+  "Uniform": "Uniform",
+  "Dropshadow": "Dropshadow",
+  "Font Family": "Font Family",
+  "Proportional Sans-Serif": "Proportional Sans-Serif",
+  "Monospace Sans-Serif": "Monospace Sans-Serif",
+  "Proportional Serif": "Proportional Serif",
+  "Monospace Serif": "Monospace Serif",
+  "Casual": "Casual",
+  "Script": "Script",
+  "Small Caps": "Small Caps",
+  "Reset": "Reset",
+  "restore all settings to the default values": "restore all settings to the default values",
+  "Done": "Done",
+  "Caption Settings Dialog": "Caption Settings Dialog",
+  "Beginning of dialog window. Escape will cancel and close the window.": "Beginning of dialog window. Escape will cancel and close the window.",
+  "End of dialog window.": "End of dialog window.",
+  "{1} is loading.": "{1} is loading.",
+  "Exit Picture-in-Picture": "Exit Picture-in-Picture",
+  "Picture-in-Picture": "Picture-in-Picture"
+});
+
+    });
+});;
+
+require(['jquery', 'message_popup/notification_popover_controller'], function($, controller) {
+    var container = $('#nav-notification-popover-container');
+    var controller = new controller(container);
+    controller.registerEventListeners();
+    controller.registerListNavigationEventListeners();
+});
+;
+
+        require(['jquery', 'core/custom_interaction_events'], function($, CustomEvents) {
+            CustomEvents.define('#jump-to-activity', [CustomEvents.events.accessibleChange]);
+            $('#jump-to-activity').on(CustomEvents.events.accessibleChange, function() {
+                if (!$(this).val()) {
+                    return false;
+                }
+                $('#url_select_f62f917648b5f514').submit();
+            });
+        });
+    ;
+
+M.util.js_pending('theme_boost/loader');
+require(['theme_boost/loader'], function() {
+    M.util.js_complete('theme_boost/loader');
+});
+
+M.util.js_pending('theme_boost/drawer');
+require(['theme_boost/drawer'], function(drawer) {
+    drawer.init();
+    M.util.js_complete('theme_boost/drawer');
+});
+;
+M.util.js_pending('core/notification'); require(['core/notification'], function(amd) {amd.init(24292, [], true); M.util.js_complete('core/notification');});;
+M.util.js_pending('core/log'); require(['core/log'], function(amd) {amd.setConfig({"level":"warn"}); M.util.js_complete('core/log');});;
+M.util.js_pending('core/page_global'); require(['core/page_global'], function(amd) {amd.init(); M.util.js_complete('core/page_global');});M.util.js_complete("core/first");
+});
+//]]>
+</script>
+<script>
+//<![CDATA[
+M.yui.add_module({"qtype_multianswer":{"name":"qtype_multianswer","fullpath":"https:\/\/www.jinhong.org\/moodle\/lib\/javascript.php\/1623086421\/question\/type\/multianswer\/module.js","requires":["base","node","event","overlay"]},"core_question_engine":{"name":"core_question_engine","fullpath":"https:\/\/www.jinhong.org\/moodle\/lib\/javascript.php\/1623086421\/question\/qengine.js","requires":["node","event"]}});
+
+//]]>
+</script>
+<script>
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"Last modified","name":"Name","error":"Error","info":"Information","yes":"Yes","no":"No","cancel":"Cancel","changesmadereallygoaway":"You have made changes. Are you sure you want to navigate away and lose your changes?","confirm":"Confirm","areyousure":"Are you sure?","closebuttontitle":"Close","unknownerror":"Unknown error","file":"File","url":"URL"},"repository":{"type":"Type","size":"Size","invalidjson":"Invalid JSON string","nofilesattached":"No files attached","filepicker":"File picker","logout":"Logout","nofilesavailable":"No files available","norepositoriesavailable":"Sorry, none of your current repositories can return files in the required format.","fileexistsdialogheader":"File exists","fileexistsdialog_editor":"A file with that name has already been attached to the text you are editing.","fileexistsdialog_filemanager":"A file with that name has already been attached","renameto":"Rename to \"{$a}\"","referencesexist":"There are {$a} alias\/shortcut files that use this file as their source","select":"Select"},"admin":{"confirmdeletecomments":"You are about to delete comments, are you sure?","confirmation":"Confirmation"},"question":{"flagged":"Flagged"},"quiz":{"functiondisabledbysecuremode":"That functionality is currently disabled","startattempt":"Start attempt","timesup":"Time is up!"},"debug":{"debuginfo":"Debug info","line":"Line","stacktrace":"Stack trace"},"langconfig":{"labelsep":": "}};
+//]]>
+</script>
+<script>
+//<![CDATA[
+(function() {Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"MathJax.Hub.Config({\r\n    config: [\"Accessible.js\", \"Safe.js\"],\r\n    errorSettings: { message: [\"!\"] },\r\n    skipStartupTypeset: true,\r\n    messageStyle: \"none\"\r\n});\r\n","lang":"en"});
+});
+Y.use("moodle-mod_quiz-autosave",function() {M.mod_quiz.autosave.init("60");
+});
+ M.util.js_pending('random62f917648b5f51'); Y.use('core_question_flags', function(Y) { M.core_question_flags.init(Y, "https:\/\/www.jinhong.org\/moodle\/question\/toggleflag.php", [{"src":"https:\/\/www.jinhong.org\/moodle\/theme\/image.php\/boost\/core\/1623086421\/i\/unflagged","title":"Flag this question for future reference","alt":"Not flagged"},{"src":"https:\/\/www.jinhong.org\/moodle\/theme\/image.php\/boost\/core\/1623086421\/i\/flagged","title":"Remove flag","alt":"Flagged"}], ["Flag question","Remove flag"]);  M.util.js_complete('random62f917648b5f51'); });
+ M.util.js_pending('random62f917648b5f52'); Y.use('mod_quiz', function(Y) { M.mod_quiz.init_attempt_form(Y);  M.util.js_complete('random62f917648b5f52'); });
+ M.util.js_pending('random62f917648b5f53'); Y.use('mod_quiz', function(Y) { M.mod_quiz.nav.init(Y);  M.util.js_complete('random62f917648b5f53'); });
+M.util.help_popups.setup(Y);
+ M.util.js_pending('random62f917648b5f515'); Y.use('qtype_multianswer', function(Y) { M.qtype_multianswer.init(Y, "#question-66627-2");  M.util.js_complete('random62f917648b5f515'); });
+ M.util.js_pending('random62f917648b5f516'); Y.use('core_question_engine', function(Y) { M.core_question_engine.init_submit_button(Y, "q66627:2_-submit", "2");  M.util.js_complete('random62f917648b5f516'); });
+ M.util.js_pending('random62f917648b5f517'); Y.use('core_question_engine', function(Y) { M.core_question_engine.init_submit_button(Y, "q66627:3_-submit", "3");  M.util.js_complete('random62f917648b5f517'); });
+ M.util.js_pending('random62f917648b5f518'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random62f917648b5f518'); });
+})();
+//]]>
+</script>
+
+        </div>
+    </footer>
+</div><div id="yui3-css-stamp" style="position: absolute !important; visibility: hidden !important" class=""></div>
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
